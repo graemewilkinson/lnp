@@ -1,0 +1,10 @@
+# Site settings
+title: London News Pictures  
+email: graeme.wilkinson@me.com
+description: "London News Pictures Agency"
+baseurl:
+url: "http://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
