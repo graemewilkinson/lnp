@@ -82,7 +82,7 @@
 					if ($stmt = $mysqli->prepare("UPDATE testimonials SET companyname = ?, testimonialcontent = ?, name = ?
 						WHERE id=?"))
 					{
-						$stmt->bind_param("ssi", $companyname, $testimonialcontent, $name, $id);
+						$stmt->bind_param("sssi", $companyname, $testimonialcontent, $name, $id);
 						$stmt->execute();
 						$stmt->close();
 					}
@@ -169,7 +169,7 @@
 				// insert the new record into the database
 				if ($stmt = $mysqli->prepare("INSERT testimonials (companyname, testimonialcontent, name) VALUES (?, ?, ?)"))
 				{
-					$stmt->bind_param("ssi", $companyname, $testimonialcontent, $name);
+					$stmt->bind_param("sss", $companyname, $testimonialcontent, $name);
 					$stmt->execute();
 					$stmt->close();
 				}
