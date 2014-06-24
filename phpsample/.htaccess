@@ -1,0 +1,4 @@
+AuthType Basic  
+AuthName "restricted area"  
+AuthUserFile /home/gwilki01/htdocs/lnpprsite/login_form/.htpasswd 
+require valid-user

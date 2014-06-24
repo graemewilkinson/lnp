@@ -8,7 +8,7 @@
                 
                 <h1>View Records</h1>
                 
-                <p><b>View All</b> | <a href="view-paginated.php">View Paginated</a></p>
+                <p><b>View All</b></p>
                 
                 <?php
                         // connect to the database
