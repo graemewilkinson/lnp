@@ -169,7 +169,7 @@
 				// insert the new record into the database
 				if ($stmt = $mysqli->prepare("INSERT testimonials (companyname, testimonialcontent, name) VALUES (?, ?, ?)"))
 				{
-					$stmt->bind_param("ss", $companyname, $testimonialcontent, $name);
+					$stmt->bind_param("ssi", $companyname, $testimonialcontent, $name);
 					$stmt->execute();
 					$stmt->close();
 				}
