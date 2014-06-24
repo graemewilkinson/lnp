@@ -36,7 +36,7 @@
 						value="<?php echo $companyname; ?>"/><br/>
 					<strong>Testimonial Content: *</strong> <input type="text" name="testimonialcontent"
 						value="<?php echo $testimonialcontent; ?>"/>
-                                        <strong>Client Name: *</strong> <input type="text" name="name"
+					<strong>Client Name: *</strong> <input type="text" name="name"
 						value="<?php echo $name; ?>"/>
 					<p>* required</p>
 					<input type="submit" name="submit" value="Submit" />
@@ -67,19 +67,19 @@
 				$id = $_POST['id'];
 				$companyname = htmlentities($_POST['companyname'], ENT_QUOTES);
 				$testimonialcontent = htmlentities($_POST['testimonialcontent'], ENT_QUOTES);
-                                $name = htmlentities($_POST['name'], ENT_QUOTES);
+				$name = htmlentities($_POST['name'], ENT_QUOTES);
 				
 				// check that firstname and lastname are both not empty
 				if ($companyname == '' || $testimonialcontent == '' || $name == '')
 				{
 					// if they are empty, show an error message and display the form
 					$error = 'ERROR: Please fill in all required fields!';
-					renderForm($companyname, $testimonialcontent, $name, $error, $id);
+					renderForm($companyname = '', $testimonialcontent ='', $name ='', $error = '', $id = '')
 				}
 				else
 				{
 					// if everything is fine, update the record in the database
-					if ($stmt = $mysqli->prepare("UPDATE testimonials SET companyname = ?, testimonialcontent = ?, name = ?,
+					if ($stmt = $mysqli->prepare("UPDATE testimonials SET companyname = ?, testimonialcontent = ?, name = ?
 						WHERE id=?"))
 					{
 						$stmt->bind_param("ssi", $companyname, $testimonialcontent, $name, $id);
@@ -155,7 +155,7 @@
 			// get the form data
 			$companyname = htmlentities($_POST['companyname'], ENT_QUOTES);
 			$testimonialcontent = htmlentities($_POST['testimonialcontent'], ENT_QUOTES);
-                        $name = htmlentities($_POST['name'], ENT_QUOTES);
+			$name = htmlentities($_POST['name'], ENT_QUOTES);
 			
 			// check that firstname and lastname are both not empty
 			if ($companyname == '' || $testimonialcontent == '' || $name == '')

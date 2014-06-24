@@ -1,46 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-	<title>View Records</title>
-</head>
-<body>
-<?php
-/* 
-	VIEW.PHP
-	Displays all data from 'players' table
-*/
-        // connect to the database
-	include('connect-db.php');
-
-	// get results from database
-	$result = mysql_query("SELECT * FROM testimonials ORDER BY id") 
-		or die(mysql_error());  
-		
-	// display data in table
-	echo "<p><b>View All</b>";
-	
-	echo "<table border='1' cellpadding='10'>";
-	echo "<tr> <th>ID</th> <th>Company Name</th> <th>Content</th> <th>Individuals Name</th><th></th><th></th></tr>";
-
-	// loop through results of database query, displaying them in the table
-	while($row = mysql_fetch_array( $result )) {
-		
-		// echo out the contents of each row into a table
-		echo "<tr>";
-		echo '<td>' . $row['id'] . '</td>';
-		echo '<td>' . $row['companyname'] . '</td>';
-		echo '<td>' . $row['testimonialcontent'] . '</td>';
-                echo '<td>' . $row['name'] . '</td>';
-		echo '<td><a href="records.php?id=' . $row['id'] . '">Edit</a></td>';
-		echo '<td><a href="delete.php?id=' . $row['id'] . '">Delete</a></td>';
-		echo "</tr>"; 
-	} 
-
-	// close table>
-	echo "</table>";
-?>
-<p><a href="records.php">Add a new record</a></p>
-
-</body>
-</html>	
-
+        <head>  
+                <title>View Records</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        </head>
+        <body>
+                
+                <h1>View Records</h1>
+                
+                <p><b>View All</b> | <a href="view-paginated.php">View Paginated</a></p>
+                
+                <?php
+                        // connect to the database
+                        include('connect-db.php');
+                        
+                        // get the records from the database
+                        if ($result = $mysqli->query("SELECT * FROM testimonials ORDER BY id"))
+                        {
+                                // display records if there are records to display
+                                if ($result->num_rows > 0)
+                                {
+                                        // display records in a table
+                                        echo "<table border='1' cellpadding='10'>";
+                                        
+                                        // set table headers
+                                        echo "<tr> <th>ID</th> <th>Company Name</th> <th>Content</th> <th>Individuals Name</th><th></th><th></th></tr>";
+                                        
+                                        while ($row = $result->fetch_object())
+                                        {
+                                                // set up a row for each record
+                                                echo "<tr>";
+                                                echo "<td>" . $row->id . "</td>";
+                                                echo "<td>" . $row->companyname . "</td>";
+                                                echo "<td>" . $row->testimonialcontent . "</td>";
+                                                echo "<td>" . $row->name . "</td>";
+                                                echo "<td><a href='records.php?id=" . $row->id . "'>Edit</a></td>";
+                                                echo "<td><a href='delete.php?id=" . $row->id . "'>Delete</a></td>";
+                                                echo "</tr>";
+                                        }
+                                        
+                                        echo "</table>";
+                                }
+                                // if there are no records in the database, display an alert message
+                                else
+                                {
+                                        echo "No results to display!";
+                                }
+                        }
+                        // show an error if there is an issue with the database query
+                        else
+                        {
+                                echo "Error: " . $mysqli->error;
+                        }
+                        
+                        // close database connection
+                        $mysqli->close();
+                
+                ?>
+                
+                <a href="records.php">Add New Record</a>
+        </body>
+</html>
 
