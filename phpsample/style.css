@@ -1,0 +1,183 @@
+body
+{
+	background-color:grey; /*used to make the strip below stand out, put in CSS to ensure I can change all pages colours at the same time.*/
+	font-family:arial, helvetica, sans-serif;
+}
+
+#container
+{
+	background-color:#FFF; /* used to create a white strip for the content to sit on*/
+	margin:auto;
+	width:65em;
+}
+
+div.headingcontainer
+{
+	padding:5% 0 5% 5%;
+}
+
+blockquote
+{
+	font-style:italic;
+	margin-left: 1em;
+}
+
+img.logo
+{
+	float:left;
+	padding-bottom:2%;
+}
+
+div.toptitle
+{
+	float:left;
+	font-size:1.5em;
+	font-weight:700;
+	margin:2.5% 0 0;
+	padding-bottom:2%;
+}
+
+#navcontainer ul
+{
+	background-color:#036;
+	color:#FFF;
+	float:left;
+	margin:0 0 1em;
+	padding-left:0;
+	width:100%;
+}
+/* My nav bar was taken and adapted from http://css.maxdesign.com.au/listamatic/horizontal03.htm from listamtics*/
+#navcontainer ul li
+{
+	display:inline;
+}
+
+#navcontainer ul li a
+{
+	background-color:#036;
+	color:#FFF;
+	float:left;
+	padding:1.5em 0; /*have changed this to 1.5 rather than 0.2 to make the height more appropriate for my design and removed the side margin.*/
+	text-align:center; /*changed from none to center*/
+	text-decoration:none;
+	text-transform:capitalize; /*added this myself to change the text*/
+	width:25%;/*Changed to 25% as there are four buttons,*/
+}
+
+#navcontainer ul li a:hover
+{
+	background-color:#218559;
+	color:#fff;
+}
+
+#navcontainer ul li.active a
+{
+	background:#218559;
+}
+
+li #active
+{
+	background-color:#218559;
+	padding:1.5em 0;
+}
+
+#current a
+{
+	background-color:#218559;
+}
+
+img.main
+{
+	border:thin;
+	float:left;
+	margin-left:5%;
+	margin-right:1em;
+}
+
+h2
+{
+	margin-bottom:.5em;
+	width:100%;
+}
+
+p.tagline
+{
+	margin:8% 5% 1em;
+}
+
+hr
+{
+	clear: both;
+        border:solid;
+	color:#036;
+	width:80%;
+}
+
+div.bottom-panel
+{
+	clear:both;
+	float:left;
+	margin-left:5%;
+	width:100%;
+}
+
+div.testimonial
+{
+	float:left;
+	margin:0 1em 1em 0;
+	width:30%;
+}
+
+div.footer
+{
+	clear: both;
+        background-color:#036;
+	color:#FFF;
+        padding-left:5%;
+        overflow: hidden;
+}
+
+div.footercol
+{
+	float:left;
+	font-size:90%;
+	margin:0 1em 1em 0;
+	width:31.6%;
+        text-align: justify;
+}
+
+ul
+{
+	list-style-type:none;
+	margin-left:0;
+	padding-left:0;
+}
+
+div.profileimage1
+{
+	float:left;
+	margin: 10px;
+	width:42%;
+}
+
+div.profileimage2
+{
+	float:left;
+	margin:0 5% 2% 2.5%;
+        width: 42%
+}
+
+div.teamcontainer
+{
+	clear: both;
+        float:left;
+	margin:2.5% 2.5% 2% 5%;
+        width: 86%;
+}
+
+div.teamdes
+{
+	float:right;
+	padding:70px 0 0 50px;
+	width:240px;
+}
