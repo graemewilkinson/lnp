@@ -74,7 +74,7 @@
 				{
 					// if they are empty, show an error message and display the form
 					$error = 'ERROR: Please fill in all required fields!';
-					renderForm($companyname = '', $testimonialcontent ='', $name ='', $error = '', $id = '')
+					renderForm($companyname = '', $testimonialcontent ='', $name ='', $error = '', $id = '');
 				}
 				else
 				{
