@@ -116,7 +116,8 @@ body
 {
 	background-color:#FFF;
 	margin:auto;
-	width:900px;
+	width:80%;
+        max-width: 900px;
 }
 
 div.previewimage
@@ -134,7 +135,7 @@ div.largeimage
 	width:600px;
 }
 
-div.imagecontainer
+div.wrapper
 {
 	margin:auto;
 	padding:60px 20px;

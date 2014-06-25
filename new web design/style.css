@@ -1,0 +1,37 @@
+body
+{
+    background-color: grey;
+    font-family:arial, helvetica, sans-serif;
+}
+div.wrapper
+{
+    width: 80%;
+    max-width: 960px;
+    background-color: #fff;
+    margin: auto;
+}
+p.tagline
+{
+	margin: 2%;
+}
+img.main
+{
+    width: 80%;
+    margin: 0 10%;
+}
+blockquote
+{
+	font-style:italic;
+	margin-left: 1em;
+}
+div.testimonial
+{
+	float:left;
+	margin: 0% 1% 0% 1%;
+	width:30%;
+}
+div.testblock
+{
+    float: left;
+    margin: 5%;
+}
