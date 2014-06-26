@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     
-<header>
+<head>
     <meta content="text/html; charset=utf-8"
           http-equiv="Content-Type">
     <link href="style.css"
@@ -13,8 +13,15 @@
         <link href="style.css"
           rel="stylesheet"
           type="text/css">
+  <div class="wrapper">
+<header>
+    <ul id="menu">
+        <li id="pagecurrentgallery"><a>Gallery</a></li>
+        <li id="screendesign1"><a href="design1.html">Screen Design 1</a></li>
+        <li id="screendesign2"><a href="design2.html">Screen Design 2</a></li>
+        <li id="furtherinfo"><a href="furtherinfo.html">Further Info</a></li>
+    </ul>
 </header>
-    <div class="wrapper">
         <p class="tagline">
         <em>A collaborative photographic agency run by professional editorial photographers throughout the UK. Supplying quality news and feature pictures.</em>
       </p>
