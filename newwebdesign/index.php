@@ -6,6 +6,10 @@
     <link href="style.css"
           rel="stylesheet"
           type="text/css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)">
   </head>
     <title>
       London News Pictures | Public Relations Photography

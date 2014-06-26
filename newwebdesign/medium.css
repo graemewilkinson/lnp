@@ -1,0 +1,5 @@
+.menu-item {
+  display: block;
+  float: left;
+  width: 50%; /* 100/number of items */
+}
