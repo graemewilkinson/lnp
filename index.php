@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<body>
 <head>
     <meta content="text/html; charset=utf-8"
           http-equiv="Content-Type">
-        
     <link href="style.css"
           rel="stylesheet"
           type="text/css">
         
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)" />
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)">
+  
     <title>
       London News Pictures | Public Relations Photography
     </title>
 </head>
-<body>
 <div class="wrapper">
 <header>
    <ul id="menu">
@@ -66,7 +65,7 @@ while ($row = mysql_fetch_row($result)) {
 }
 ?>
             </div>
-        <div style=clear:both></div>
+    <div style=clear:both></div>
     </div>
-</body> 
+    </body> 
     

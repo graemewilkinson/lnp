@@ -1,5 +1,11 @@
 .menu-item {
   display: block;
   float: left;
-  width: 100%; /* 100/number of items */
+  width: 50%; /* 100/number of items */
+}
+div.testimonial
+{
+	float:left;
+	margin: 0% 1% 0% 1%;
+	width:45%;
 }

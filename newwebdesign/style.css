@@ -12,7 +12,8 @@ div.wrapper
 }
 p.tagline
 {
-	margin: 2%;
+	clear: both;
+        margin: 2%;
 }
 img.main
 {
