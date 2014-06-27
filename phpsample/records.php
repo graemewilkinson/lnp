@@ -34,8 +34,7 @@
 					
 					<strong>Company Name: *</strong> <input type="text" name="companyname"
 						value="<?php echo $companyname; ?>"/><br/>
-					<strong>Testimonial Content: *</strong><textarea rows="5" cols="50" name="testimonialcontent">
-					<?php echo $testimonialcontent; ?></textarea><br/>
+					<strong>Testimonial Content: *</strong> <textarea rows="5" cols="50" name="testimonialcontent"><?php echo $testimonialcontent; ?></textarea><br/>
 					<strong>Client Name: *</strong> <input type="text" name="name"
 						value="<?php echo $name; ?>"/>
 					<p>* required</p>
