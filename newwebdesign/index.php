@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    
+<body>
 <head>
     <meta content="text/html; charset=utf-8"
           http-equiv="Content-Type">
@@ -10,14 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)">
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)">
-  </head>
+  
     <title>
       London News Pictures | Public Relations Photography
     </title>
-        <link href="style.css"
-          rel="stylesheet"
-          type="text/css">
-  <div class="wrapper">
+</head>
 <header>
    <ul id="menu">
   <li class="menu-item">
@@ -69,4 +66,5 @@ while ($row = mysql_fetch_row($result)) {
             </div>
     <div style=clear:both></div>
     </div>
+    </body> 
     
