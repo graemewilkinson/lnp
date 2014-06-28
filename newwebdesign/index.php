@@ -8,9 +8,19 @@
           rel="stylesheet"
           type="text/css">
         
+     <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jcarousel.js"></script>
+    <script>$(function() {
+    $('.jcarousel').jcarousel({
+        // Configuration goes here
+    });
+    });
+    </script>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
+   
     <title>
       London News Pictures | Public Relations Photography
     </title>
@@ -33,14 +43,22 @@
   </li>
 </ul>
 </header>
-        <p class="tagline">
+
+<div class="jcarousel">
+    <ul>
+        <li><img src="img/lego1.jpg" alt="photograph of london made of lego at Lego Land, covered in snow. Woman sweeping snow from top of big ben"></li>
+    </ul>
+</div>
+ <div class="testblock">
+
+        <!-- <p class="tagline">
         <em>A collaborative photographic agency run by professional editorial photographers throughout the UK. Supplying quality news and feature pictures.</em>
       </p>
         <img alt=
       "photograph of london made of lego at Lego Land, covered in snow. Woman sweeping snow from top of big ben"
            class="main"
            src="img/lego1.jpg">
-            <div class="testblock">
+            <div class="testblock"> -->
         <?php
 // Connect to the database
 $hostname = "mysql.gwilki01.wdd1314.bbkweb.org";
