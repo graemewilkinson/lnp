@@ -3,24 +3,44 @@
 <head>
     <meta content="text/html; charset=utf-8"
           http-equiv="Content-Type">
-           <link href="style.css"
+           
+              <link href="shared.css"
           rel="stylesheet"
           type="text/css">
+            <link href="style.css"
+          rel="stylesheet"
+          type="text/css">
+         
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jcarousel.js"></script>
-<script>$(function() {
-    $('.jcarousel').jcarousel({
-        // Configuration goes here
-    });
-});</script>
+<script type="text/javascript" src="jcarousel.basic.js"></script>
 <title>Test Slider</title>
 </head>
 <body>
-    <div class="jcarousel">
-    <ul>
-        <li><img src="../newwebdesign/img/lego1.jpg" alt=""></li>
-        <li><img src="../newwebdesign/img/david.jpg" alt=""></li>
-    </ul>
-</div>
-</body>
+
+        <div class="wrapper">
+            <h1>Basic carousel</h1>
+
+            <p>This example shows how to setup a basic carousel with prev/next controls and pagination.</p>
+
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="../newwebdesign/img/lego1.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="../newwebdesign/img/david.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+
+               
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
+        </div>
+
+    </body>
 </html>
