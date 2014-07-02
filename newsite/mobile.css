@@ -1,0 +1,23 @@
+body
+{
+  background-color: #fff;
+  margin: 0;
+}
+.menu-item
+{
+  display: block;
+  float: left;
+  width: 100%; /* 100/number of items */
+}
+div.testimonial
+{
+	float:left;
+	margin: 0% 1% 0% 1%;
+	width:100%;
+}
+div.wrapper
+{
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+}
