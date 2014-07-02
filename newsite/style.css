@@ -105,6 +105,10 @@ div.testblock
 
 /** Carousel **/
 
+.carouselwrap{
+    max-width: 620px;
+    margin: auto;
+}
 .jcarousel {
     position: relative;
     overflow: hidden;

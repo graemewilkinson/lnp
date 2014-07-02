@@ -10,6 +10,10 @@
          <link href="jcarousel.basic.css"
           rel="stylesheet"
           type="text/css">
+            
+            <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jcarousel.js"></script>
+<script type="text/javascript" src="jcarousel.basic.js"></script>
         
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)" />
@@ -40,10 +44,22 @@
 <p class="tagline">
         <em>A collaborative photographic agency run by professional editorial photographers throughout the UK. Supplying quality news and feature pictures.</em>
       </p>
-        <img alt=
-      "photograph of london made of lego at Lego Land, covered in snow. Woman sweeping snow from top of big ben"
-           class="main"
-           src="img/lego1.jpg">
+ <div class="carouselwrap">
+ <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/lego1.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/david.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
+ </div>
             <div class="testblock">
         <?php
 // Connect to the database
