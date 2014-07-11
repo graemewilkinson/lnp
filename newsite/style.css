@@ -76,3 +76,22 @@ div.testblock
 .menu-link:active, .menu-link.is-active {
   background-position: 0 -100px;
 }
+img.logo
+{
+	float:left;
+	padding-bottom:2%;
+}
+
+div.toptitle
+{
+	float:left;
+	font-size:1.5em;
+	font-weight:700;
+	margin:2.5% 0 0;
+	padding-bottom:2%;
+}
+#nav
+{
+    display: inline;
+    
+}

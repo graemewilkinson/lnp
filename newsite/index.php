@@ -12,7 +12,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="jquery.flexslider.js"></script>
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
   $(window).load(function() {
     $('.flexslider').flexslider();
   });
@@ -29,6 +29,19 @@
 <body>
 <div class="wrapper">
 <header>
+        <h1>
+          <img alt="London News Pictures"
+              class="logo"
+              height="61"
+              src="img/LNP_PR_167px.jpg"
+              width="167">
+        </h1>
+        <div class="toptitle">
+          Public Relations Photography
+        </div>
+        <div style="clear: both"></div>
+</header>
+        <div id="nav">
    <ul id="menu">
   <li class="menu-item">
     <a href="#" class="menu-link">Home</a>
@@ -43,7 +56,8 @@
     <a href="#" class="menu-link">Contact Us</a>
   </li>
 </ul>
-</header>
+   </div>
+        <div style="clear: both"></div>
 <p class="tagline">
         <em>A collaborative photographic agency run by professional editorial photographers throughout the UK. Supplying quality news and feature pictures.</em>
       </p>
