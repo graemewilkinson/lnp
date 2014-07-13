@@ -82,7 +82,7 @@ $database = "gwilki01";
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-$sql ='SELECT id, companyname, testimonialcontent, name FROM testimonials ORDER BY id';
+$sql ='SELECT id, companyname, testimonialcontent, name FROM testimonials ORDER BY id DESC LIMIT 3';
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
