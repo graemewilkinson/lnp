@@ -106,7 +106,7 @@ $database = "gwilki01";
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-$sql ='SELECT testimonials.id, testimonials.companyname, testimonials.brief, img.imagelink, img.imagedes FROM testimonials INNER JOIN img ON testimonials.id=img.id WHERE testimonials.id = ' . $_GET['id'];
+$sql ="SELECT testimonials.id, testimonials.companyname, testimonials.brief, img.imagelink, img.imagedes FROM testimonials INNER JOIN img ON testimonials.id=img.id WHERE testimonials.id = " . $_GET['id'];
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
@@ -115,7 +115,7 @@ print "<div class='clearfix mosaicflow'>\n";
 while ($row = mysql_fetch_row($result)) {
     list($id, $companyname, $imagelink, $imagedes) = $row;
     print "<div class='mosaicflow__item'>\n";
-    print "<img src='img/$imagelink' alt='$imagedes'>";
+    print "<img src='img/imagelink' alt='$imagedes'>";
     print "</div>\n";
 }
 print "</div>\n";
