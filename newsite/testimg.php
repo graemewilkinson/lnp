@@ -18,7 +18,7 @@ print "<div class='clearfix mosaicflow'>\n\n";
 while ($row = mysql_fetch_row($result)) {
     list($id, $companyname, $mainimg, $imgdes) = $row;
     print "<div class='mosaicflow__item'>\n";
-    print "<a href=\'testpage.php?id=$id'\">\n<img src='img/$mainimg' alt='$mainimgdes'>\n<p>$companyname</p></a>\n";
+    print "<a href=\'testpage.php?id=$id'\">\n<img src='img/$mainimg' width='500' height='300' alt='$mainimgdes'>\n<p>$companyname</p></a>\n";
     print "</div>\n";
 }
 print "</div>\n";

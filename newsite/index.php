@@ -32,9 +32,7 @@
         <h1>
           <img alt="London News Pictures"
               class="logo"
-              height="61"
-              src="img/LNP_PR_167px.jpg"
-              width="167">
+              src="img/LNP_PR_167px.jpg">
         </h1>
         <div class="toptitle">
           Public Relations Photography

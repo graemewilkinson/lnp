@@ -9,9 +9,7 @@
           type="text/css">
         
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="jquery.mosaicflow.min.js"></script>
-
-
+<script src="jquery.mosaicflow.min.js"></script>    
     <title>
       London News Pictures | Public Relations Photography
     </title>
@@ -37,7 +35,7 @@ body {
 	.mosaicflow__item img {
 		display:block;
 		width:100%;
-		max-width:500px;
+		max-width:800px;
 		height:auto;
 		}
 	.mosaicflow__item p {
@@ -62,7 +60,7 @@ body {
 		}
 	
     </style>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
    
@@ -73,9 +71,7 @@ body {
         <h1>
           <img alt="London News Pictures"
               class="logo"
-              height="61"
-              src="img/LNP_PR_167px.jpg"
-              width="167">
+              src="img/LNP_PR_167px.jpg">
         </h1>
         <div class="toptitle">
           Public Relations Photography
@@ -99,18 +95,33 @@ body {
 </ul>
    </div>
         <div style="clear: both"></div>
-<div class="clearfix mosaicflow">
-    <div class="mosaicflow__item">
-        <a href="img.php"><img width="500" height="300" src="img/david.jpg" alt="Our work for the partliamerny">
-            <p>Sample text goes here</p></a>
-    </div>
-    <div class="mosaicflow__item">
-        <img width="500" height="500" src="img/lego1.jpg" alt="Lego our Client">
-<p>Sample text goes here</p>
-    </div>
-</div>
-</div>
+<?php
+// Connect to the database
+// Normal kept in a separate file and used with include()
+$hostname = "mysql.gwilki01.wdd1314.bbkweb.org";
+$username = "gwilki01";
+$password = "Edahze45imei";
+$database = "gwilki01";
 
+$link = mysql_connect($hostname,$username,$password);
+mysql_select_db($database) or die("Unable to select database");
+
+$sql ='SELECT testimonials.id, testimonials.companyname, testimonials.brief, img.imagelink, img.imagedes FROM testimonials INNER JOIN img ON testimonials.id=img.id WHERE testimonials.id = ' . $_GET['id'];
+
+// run the query
+$result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
+
+print "<div class='clearfix mosaicflow'>\n";
+while ($row = mysql_fetch_row($result)) {
+    list($id, $companyname, $imagelink, $imagedes) = $row;
+    print "<div class='mosaicflow__item'>\n";
+    print "<img src='img/$imagelink' alt='$imagedes'>";
+    print "</div>\n";
+}
+print "</div>\n";
+?>                                  
+<div style="clear: both;"></div>
+</div>
 
 </body>
 </html>
