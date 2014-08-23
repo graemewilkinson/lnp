@@ -105,7 +105,7 @@ body {
         <div style="clear: both"></div>
         
 <?php
-include (login.php);
+include 'login.php';
 
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
