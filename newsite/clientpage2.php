@@ -8,70 +8,21 @@
           rel="stylesheet"
           type="text/css">
         
+        
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="jquery.mosaicflow.min.js"></script>    
     <title>
       London News Pictures | Public Relations Photography
     </title>
-    <style>
-        
-* {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	}
 
-body {
-	font-family:"Helvetica Neue", Arial, sans-serif;
-	}
-
-.mosaicflow__column {
-	float:left;
-	}
-
-.mosaicflow__item {
-	position:relative;
-	}
-	.mosaicflow__item img {
-		display:block;
-		width:100%;
-		max-width:800px;
-		height:auto;
-		}
-	.mosaicflow__item p {
-		position:absolute;
-		bottom:0;
-		left:0;
-		width:100%;
-		margin:0;
-		padding:5px;
-		background:hsla(0,0%,0%,.5);
-		color:#fff;
-		font-size:14px;
-		text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
-		opacity:0;
-		-webkit-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		   -moz-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		     -o-transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		        transition: all 0.4s cubic-bezier(0.23,1,0.32,1);
-		}
-	.mosaicflow__item:hover p {
-		opacity:1;
-		}
-                
-        .group:before, .clearfix:before, .group:after, .clearfix:after {
-                content: "";
-                display: table
-                }
-        .group:after, .clearfix:after {
-            clear: both;
-            zoom: 1
-            }	
-    </style>
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
    
+   <link href="mosiacstyle.css"
+          rel="stylesheet"
+          type="text/css">
+    
 </head>
 <body>
 <div class="wrapper">

@@ -1,0 +1,65 @@
+*
+{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	font-family:"Helvetica Neue", Arial, sans-serif;
+}
+
+.mosaicflow__column
+{
+	float:left;
+}
+
+.mosaicflow__item
+{
+	position:relative;
+}
+
+.mosaicflow__item img
+{
+	display:block;
+	height:auto;
+	max-width:800px;
+	width:100%;
+}
+
+.mosaicflow__item p
+{
+	-moz-transition:all .4s cubic-bezier(0.23,1,0.32,1);
+	-o-transition:all .4s cubic-bezier(0.23,1,0.32,1);
+	-webkit-transition:all .4s cubic-bezier(0.23,1,0.32,1);
+	background:hsla(0,0%,0%,.5);
+	bottom:0;
+	color:#fff;
+	font-size:14px;
+	left:0;
+	margin:0;
+	opacity:0;
+	padding:5px;
+	position:absolute;
+	text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
+	transition:all .4s cubic-bezier(0.23,1,0.32,1);
+	width:100%;
+}
+
+.mosaicflow__item:hover p
+{
+	opacity:1;
+}
+
+.group:before,.clearfix:before,.group:after,.clearfix:after
+{
+	content:"";
+	display:table;
+}
+
+.group:after,.clearfix:after
+{
+	clear:both;
+	zoom:1;
+}
