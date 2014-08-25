@@ -67,7 +67,7 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 $imageresult = mysql_query($images,$link) or die("Unable to select: ".mysql_error());
 
  $row = mysql_fetch_row($result);
-    list ($id, $companyname, $testimonialcontent, $name) = $row[1];
+    list ($id, $companyname, $testimonialcontent, $name) = $row[0];
     print "<h1>$companyname</h1>\n";
     print "<div class='clearfix mosaicflow'>\n";
 while ($imagerow = mysql_fetch_row($imageresult)) {
