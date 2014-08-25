@@ -92,12 +92,6 @@ div.toptitle
 	margin:2.5% 0 0;
 	padding-bottom:2%;
 }
-#nav
-{
-    display: inline;
-    overflow: auto;
-    
-}
 .mosaicflow__column
 {
     float:left;
