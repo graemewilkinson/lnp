@@ -52,9 +52,7 @@
     <a href="#" class="menu-link">Contact Us</a>
   </li>
 </ul>
-   </div>
-        <div style="clear: both"></div>
-        
+   </div>        
 <?php
 include 'login.php';
 
@@ -68,8 +66,8 @@ $images ='SELECT id, imageid, imagelink, imagedes FROM img WHERE id = '. $_GET['
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 $imageresult = mysql_query($images,$link) or die("Unable to select: ".mysql_error());
 
-while ($row = mysql_fetch_row($result)) {
-    list ($id, $companyname, $testimonialcontent, $name) = $row;
+ $row = mysql_fetch_row($result);
+    list ($id, $companyname, $testimonialcontent, $name) = $row[1];
     print "<h1>$companyname</h1>\n";
     print "<div class='clearfix mosaicflow'>\n";
 while ($imagerow = mysql_fetch_row($imageresult)) {
@@ -84,7 +82,6 @@ while ($imagerow = mysql_fetch_row($imageresult)) {
     print "<p>$testimonialcontent</p>\n";
     print "<p>$name</p>";
     print "</div>";
-}
 ?>
 <div style="clear: both;"></div>
 </div>

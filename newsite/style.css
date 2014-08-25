@@ -95,6 +95,7 @@ div.toptitle
 #nav
 {
     display: inline;
+    overflow: auto;
     
 }
 .mosaicflow__column
