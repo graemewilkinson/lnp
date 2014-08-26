@@ -39,7 +39,6 @@ while ($row = mysql_fetch_row($result)) {
 }
 ?>
             </div>
-        <div style=clear:both></div>
     </div>
 </body> 
     
