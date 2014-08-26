@@ -25,3 +25,7 @@ div.clientpagebtm
 {
     width: 100%;
 }
+.mosaicflow__item p
+{
+  opacity: 1;
+}

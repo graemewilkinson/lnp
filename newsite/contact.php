@@ -1,6 +1,7 @@
-<html>
-<body>
+<!DOCTYPE html>
 <?php
+$page = "contactus";
+include 'header.php';
 function spamcheck($field) {
   // Sanitize e-mail address
   $field=filter_var($field, FILTER_SANITIZE_EMAIL);
@@ -12,7 +13,6 @@ function spamcheck($field) {
   }
 }
 ?>
-
 <h2>Feedback Form</h2>
 <?php
 // display form if user has not clicked submit
@@ -45,5 +45,6 @@ if (!isset($_POST["submit"])) {
   }
 }
 ?>
+</div>
 </body>
 </html>

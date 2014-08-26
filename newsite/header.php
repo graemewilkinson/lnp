@@ -89,7 +89,7 @@ if ($page == contactus) {
 print "class='menu-link is-active'";
 }
 else {
-print "href='contactus.php'class='menu-link'";
+print "href='contact.php'class='menu-link'";
 }
 ?>
 >Contact Us</a>
