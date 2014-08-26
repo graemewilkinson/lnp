@@ -9,6 +9,7 @@ div.wrapper
     max-width: 960px;
     background-color: #fff;
     margin: auto;
+    overflow: auto;
 }
 p.tagline
 {
