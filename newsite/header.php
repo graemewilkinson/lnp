@@ -62,13 +62,13 @@ print "href='index.php'class='menu-link'";
   <li class="menu-item">
     <a 
 <?php
-if ($page == aboutus) {
+if ($page == testimonials) {
 print "class='menu-link is-active'";
 }
 else {
-print "href='aboutus.php'class='menu-link'";
+print "href='testimonials.php'class='menu-link'";
 }
-?>>About Us</a>
+?>>Testimonials</a>
   </li>
   <li class="menu-item">
     <a
