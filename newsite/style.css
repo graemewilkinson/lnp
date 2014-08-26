@@ -29,7 +29,7 @@ div.testimonial
 {
 	float:left;
 	margin: 0% 1% 0% 1%;
-	width:30%;
+	width:31.5%;
 }
 div.testblock
 {
@@ -118,3 +118,8 @@ div.toptitle
     opacity:0;
 
     }
+div.clientpagebtm
+{
+    width: 45%;
+    padding: 2%;
+}

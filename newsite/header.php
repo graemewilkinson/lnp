@@ -77,7 +77,7 @@ if ($page == ourwork) {
 print "class='menu-link is-active'";
 }
 else {
-print "href='testmosiac.php'class='menu-link'";
+print "href='ourwork.php'class='menu-link'";
 }
 ?>
       >Our Work</a>

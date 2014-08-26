@@ -26,8 +26,8 @@ while ($imagerow = mysql_fetch_row($imageresult)) {
 }
     print "<div style='clear: both;'></div>";
     print "</div>";
-    print "<div>";
-    print "<p>$testimonialcontent</p>\n";
+    print "<div class='clientpagebtm'>";
+    print "<blockquote>$testimonialcontent</blockquote>\n";
     print "<p>$name</p>";
     print "</div>";
 ?>
