@@ -26,7 +26,7 @@ while ($imagerow = mysql_fetch_row($imageresult)) {
 }
     print "</div>";
     print "<div class='clientpagebtm'>";
-    print "<h3>Client Brief</h3>\n";
+    print "<h3>Client Brief & Our Approach</h3>\n";
     print "<blockquote>$brief</blockquote>\n";
     print "</div>\n";
     print "<div class='clientpagebtm'>";
