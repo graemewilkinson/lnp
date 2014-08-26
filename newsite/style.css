@@ -28,9 +28,14 @@ blockquote
 }
 div.testimonial
 {
-	float:left;
-	margin: 0% 1% 0% 1%;
-	width:31%;
+	margin: 1%;
+	width: 30.333%;
+	display: inline-block;
+	vertical-align: top;
+}
+div.tcontainer
+{
+	
 }
 div.testblock
 {

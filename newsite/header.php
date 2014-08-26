@@ -55,7 +55,7 @@ if ($page == home) {
 print "class='menu-link is-active'";
 }
 else {
-print "href='index.php'class='menu-link'";
+print "href='index.php' class='menu-link'";
 }
 ?>>Home</a>
   </li>
@@ -66,7 +66,7 @@ if ($page == testimonials) {
 print "class='menu-link is-active'";
 }
 else {
-print "href='testimonials.php'class='menu-link'";
+print "href='testimonials.php' class='menu-link'";
 }
 ?>>Testimonials</a>
   </li>
@@ -77,7 +77,7 @@ if ($page == ourwork) {
 print "class='menu-link is-active'";
 }
 else {
-print "href='ourwork.php'class='menu-link'";
+print "href='ourwork.php' class='menu-link'";
 }
 ?>
       >Our Work</a>
@@ -89,7 +89,7 @@ if ($page == contactus) {
 print "class='menu-link is-active'";
 }
 else {
-print "href='contact.php'class='menu-link'";
+print "href='contact.php' class='menu-link'";
 }
 ?>
 >Contact Us</a>
