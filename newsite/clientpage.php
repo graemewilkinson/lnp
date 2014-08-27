@@ -8,7 +8,7 @@ $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
 $sql ='SELECT id, companyname, testimonialcontent, name, brief FROM testimonials WHERE id = '. $_GET['id'];
-$images ='SELECT id, imageid, imagelink, imagedes FROM img WHERE id = '. $_GET['id'];
+$images ='SELECT imagelink, imagedes FROM img WHERE id = '. $_GET['id'];
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
@@ -19,7 +19,7 @@ $imageresult = mysql_query($images,$link) or die("Unable to select: ".mysql_erro
     print "<h1>$companyname</h1>\n";
     print "<div class='clearfix mosaicflow'>\n";
 while ($imagerow = mysql_fetch_row($imageresult)) {
-    list ($id, $imageid, $imagelink, $imagedes) = $imagerow;
+    list ($imagelink, $imagedes) = $imagerow;
     print "<div class='mosaicflow__item'>\n";
     print "<img src='img/$imagelink' alt='$imagedes'>\n";
     print "</div>\n";
