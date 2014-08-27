@@ -27,6 +27,7 @@ else {
     </title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="retina.css" media="screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2)" />
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 1024px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
     
