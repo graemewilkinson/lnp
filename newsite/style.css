@@ -130,3 +130,8 @@ div.clientpagebtm
     padding: 4%;
     float: left;
 }
+div.contactpage
+{
+    width: 50%;
+    float: left;
+}

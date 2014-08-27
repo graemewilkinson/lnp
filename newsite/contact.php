@@ -13,6 +13,7 @@ function spamcheck($field) {
   }
 }
 ?>
+<div class="contactpage">
 <h2>Feedback Form</h2>
 <?php
 // display form if user has not clicked submit
@@ -45,6 +46,14 @@ if (!isset($_POST["submit"])) {
   }
 }
 ?>
+</div>
+<div class="contactpage">
+<h2>Prefer to email us directly?</h2>
+<p>If that's the case, we have a link to our <a class="email" href="mailto:graeme dot wilkinson at me dot com">email</a> here to stop the spambots making use of it!</p>
+</div>
+<script>
+  $('.email').attr('href', 'mailto:' + 'graeme' + '.' + 'wilkinson' + '@' + 'me' + '.' + 'com');
+</script>
 </div>
 </body>
 </html>

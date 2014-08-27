@@ -20,6 +20,7 @@ print "<script src='jquery.mosaicflow.min.js'></script>";
 print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>";
 }
 else {
+print "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>";
 }
 ?>
     <title>
