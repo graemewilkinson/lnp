@@ -27,10 +27,8 @@ else {
     </title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 700px)" />
+    <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 1024px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
-   
-
     
 </head>
 <body>

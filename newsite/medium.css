@@ -9,3 +9,7 @@ div.testimonial
 	margin: 0% 1% 0% 1%;
 	width:45%;
 }
+.mosaicflow__item p
+{
+  opacity: 1;
+}
