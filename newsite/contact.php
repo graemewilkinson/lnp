@@ -15,15 +15,42 @@ function spamcheck($field) {
 ?>
 <div class="contactpage">
 <h2>Feedback Form</h2>
-<?php
+<?php 
 // display form if user has not clicked submit
 if (!isset($_POST["submit"])) {
   ?>
-  <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
-  From: <input type="text" name="from"><br>
-  Subject: <input type="text" name="subject"><br>
-  Message: <textarea rows="10" cols="40" name="message"></textarea><br>
-  <input type="submit" name="submit" value="Submit Feedback">
+  <h2>Example Responsive Form</h2>
+    <div>This form breaks at 600px and goes from a left-label form to a top-label form. At above 1200px, the labels align right.</div>
+  <!--thanks to chriscoyer for his example that helped me make this form adaptive http://codepen.io/chriscoyier/pen/DmnlJ-->
+    <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+  <div>
+    <label class="desc" id="title1" for="Field1">Subject</label>
+    <div>
+      <input id="Field1" name="subject" type="text" class="field text fn" value="" size="8" tabindex="1">
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title3" for="Field3">
+      Email
+    </label>
+    <div>
+      <input id="Field3" name="from" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+   </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title4" for="Field4">
+      Message
+    </label>
+  
+    <div>
+      <textarea id="Field4" name="message" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
+  <div>
+      <input id="saveForm" type="submit" value="Submit" name="submit">
+    </div>
   </form>
   <?php 
 } else {  // the user has submitted the form

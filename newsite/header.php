@@ -3,24 +3,22 @@
     <meta content="text/html; charset=utf-8"
           http-equiv="Content-Type">
         
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link href="style.css"
           rel="stylesheet"
           type="text/css">
-
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
 <?php
 if ($page == home) {
 print "<link rel='stylesheet'\nhref='flexslider.css'\ntype='text/css'>";
-print "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>";
 print "<script src='jquery.flexslider.js'></script>";
 print "<script type='text/javascript'>\n$(window).load(function(){\n$('.flexslider').flexslider();\n});\n</script>";
 }
 elseif ($page == clientpage || $page == ourwork){
-print "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>";
 print "<script src='jquery.mosaicflow.min.js'></script>";
 print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>";
 }
 else {
-print "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>";
 }
 ?>
     <title>
@@ -31,7 +29,6 @@ print "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min
     <link rel="stylesheet" type="text/css" href="retina.css" media="screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" />
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 1024px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
-    
 </head>
 <body>
 <div class="wrapper">

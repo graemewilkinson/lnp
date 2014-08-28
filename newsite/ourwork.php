@@ -7,7 +7,7 @@ include 'login.php';
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-$sql ='SELECT img.id, testimonials.id, img.imageid, img.imagelink, img.imagedes, img.main,  testimonials.companyname, testimonials.testimonialcontent, testimonials.name FROM img INNER JOIN testimonials ON img.id=testimonials.id WHERE img.main="1" ORDER BY testimonials.id DESC';
+$sql ='SELECT img.id, testimonials.id, img.imageid, img.imagelink, img.imagedes, img.main,  testimonials.companyname, testimonials.testimonialcontent, testimonials.name FROM img INNER JOIN testimonials ON img.id=testimonials.id WHERE img.main = TRUE ORDER BY testimonials.id DESC';
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
