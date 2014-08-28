@@ -24,13 +24,7 @@ include 'login.php';
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-//$sql ='SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, img.logo FROM testimonials JOIN img ON testimonials.id=img.id WHERE img.logo = TRUE ORDER BY testimonials.id DESC LIMIT 3';//
-
-$sql = 'SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, img.logo FROM testimonials
-LEFT JOIN img ON testimonials.id=img.id WHERE logo = TRUE
-UNION
-SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, img.logo FROM testimonials
-RIGHT JOIN img ON testimonials.id=img.id WHERE logo = TRUE ORDER BY id DESC LIMIT 3';
+$sql = 'SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, img.logo FROM testimonials LEFT JOIN img ON testimonials.id=img.id AND img.logo = TRUE ORDER BY testimonials.id LIMIT 3';
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
