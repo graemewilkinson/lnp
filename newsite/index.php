@@ -24,14 +24,22 @@ include 'login.php';
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-$sql ='SELECT id, companyname, testimonialcontent, name FROM testimonials ORDER BY id DESC LIMIT 3';
+$sql ='SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, img.logo FROM testimonials JOIN img ON testimonials.id=img.id WHERE img.logo = TRUE ORDER BY testimonials.id DESC LIMIT 3';
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 
 while ($row = mysql_fetch_row($result)) {
     print '<div class="testimonial">';
-    list ($id, $companyname, $testimonialcontent, $name) = $row;
+    list ($id, $companyname, $testimonialcontent, $name, $imglink, $imgdes, $logo) = $row;
+    print "<p>$logo</p>\n";
+    print "<p>$imglink</p>\n";
+    print "<p>$imgdes</p>\n";
+    if ($logo == TRUE) {
+    print "<img src='img/$imagelink' alt='$imagedes'>\n";
+}
+    else {   
+}
     print "<h3>$companyname</h3>\n";
     print "<blockquote>$testimonialcontent</blockquote>\n";
     print "<p>$name</p>\n";

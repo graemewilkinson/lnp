@@ -8,7 +8,7 @@ $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
 $sql ='SELECT id, companyname, testimonialcontent, name, brief FROM testimonials WHERE id = '. $_GET['id'];
-$images ='SELECT imagelink, imagedes FROM img WHERE logo = '0' AND id = '. $_GET['id'];
+$images ='SELECT imagelink, imagedes FROM img WHERE logo = FALSE AND id = '. $_GET['id'];
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
