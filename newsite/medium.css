@@ -13,3 +13,9 @@ div.testimonial
 {
   opacity: 1;
 }
+div.contactpage
+{
+    width: 80%;
+    float: left;
+    margin: 3%
+}

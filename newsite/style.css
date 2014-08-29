@@ -133,11 +133,8 @@ div.clientpagebtm
     padding: 4%;
     float: left;
 }
-div.contactpage
-{
-    width: 50%;
-    float: left;
-}
+
+/* footer */
 footer
 {
 float: left;
@@ -157,4 +154,23 @@ ul.social li
 {
    display: inline;
    padding: 1%;
+}
+/* contact us page */
+div.contactpage
+{
+    width: 45%;
+    float: left;
+    margin: 2%;
+}
+input#Field1.field.text.fn
+{
+    width: 85%
+}
+input#Field3
+{
+    width: 85%;
+}
+textarea#Field4
+{
+    width: 95%;
 }

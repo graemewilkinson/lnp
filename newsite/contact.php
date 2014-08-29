@@ -14,13 +14,13 @@ function spamcheck($field) {
 }
 ?>
 <div class="contactpage">
-<h2>Feedback Form</h2>
+
 <?php 
 // display form if user has not clicked submit
 if (!isset($_POST["submit"])) {
   ?>
-  <h2>Example Responsive Form</h2>
-    <div>This form breaks at 600px and goes from a left-label form to a top-label form. At above 1200px, the labels align right.</div>
+  <h2>Contact Us Form</h2>
+    <div>Please complete the below form to get a fast response from us.</div>
   <!--thanks to chriscoyer for his example that helped me make this form adaptive http://codepen.io/chriscoyier/pen/DmnlJ-->
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
   <div>
@@ -68,7 +68,7 @@ if (!isset($_POST["submit"])) {
       $message = wordwrap($message, 70);
       // send mail
       mail("graeme.wilkinson@me.com",$subject,$message,"From: $from\n");
-      echo "Thank you for sending us feedback";
+      echo "Thank you for sending us a message";
     }
   }
 }
