@@ -35,13 +35,16 @@ while ($row = mysql_fetch_row($result)) {
     if ($logo == TRUE) {
     print "<div class='$ref'><img src='img/$imagelink' alt='$imagedes' /></div>\n";
 }
-    print "<h3 class='test'>$companyname</h3>\n";
+    print "<h3>$companyname</h3>\n";
     print "<blockquote>$testimonialcontent</blockquote>\n";
-    print "<p class='test'>$name</p>\n";
+    print "<p>$name</p>\n";
     print "</div>\n";
 }
 ?>
             </div>
+<?php
+include 'footer.html';
+?>
     </div>
 </body> 
     

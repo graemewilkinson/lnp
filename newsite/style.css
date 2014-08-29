@@ -19,14 +19,6 @@ p.tagline
 	clear: both;
         margin: 2%;
 }
-h3.test
-{
-    text-align: center;
-}
-p.test
-{
-    text-align: center;    
-}
 img.main
 {
     width: 80%;
@@ -145,4 +137,11 @@ div.contactpage
 {
     width: 50%;
     float: left;
+}
+footer
+{
+float: left;
+width: 100%;
+background-color: #201F9B;
+color: white
 }
