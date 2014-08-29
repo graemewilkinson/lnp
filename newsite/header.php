@@ -10,15 +10,16 @@
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
 <?php
 if ($page == home) {
-print "<link rel='stylesheet'\nhref='flexslider.css'\ntype='text/css'>";
-print "<script src='jquery.flexslider.js'></script>";
-print "<script type='text/javascript'>\n$(window).load(function(){\n$('.flexslider').flexslider();\n});\n</script>";
+print "<link rel='stylesheet'\nhref='flexslider.css'\ntype='text/css'>\n";
+print "<link rel='stylesheet'\nhref='round.php'\ntype='text/css'>\n";
+print "<script src='jquery.flexslider.js'></script>\n";
+print "<script type='text/javascript'>\n$(window).load(function(){\n$('.flexslider').flexslider();\n});\n</script>\n";
 }
 elseif ($page == clientpage || $page == ourwork){
-print "<script src='jquery.mosaicflow.min.js'></script>";
-print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>";
+print "<script src='jquery.mosaicflow.min.js'></script>\n";
+print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>\n";
 }
-else {
+else { "\n";
 }
 ?>
     <title>

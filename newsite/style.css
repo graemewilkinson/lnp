@@ -19,6 +19,14 @@ p.tagline
 	clear: both;
         margin: 2%;
 }
+h3.test
+{
+    text-align: center;
+}
+p.test
+{
+    text-align: center;    
+}
 img.main
 {
     width: 80%;
