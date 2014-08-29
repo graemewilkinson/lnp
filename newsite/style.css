@@ -143,5 +143,18 @@ footer
 float: left;
 width: 100%;
 background-color: #201F9B;
-color: white
+color: white;
+margin-top: 3%;
+}
+ul.social
+{
+    list-style-type: none;
+    text-align: center;
+    margin: 3% 0 3% 0;
+    padding: 0;
+}
+ul.social li
+{
+   display: inline;
+   padding: 1%;
 }

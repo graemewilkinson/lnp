@@ -81,6 +81,9 @@ if (!isset($_POST["submit"])) {
 <script>
   $('.email').attr('href', 'mailto:' + 'graeme' + '.' + 'wilkinson' + '@' + 'me' + '.' + 'com');
 </script>
+<?php
+include 'footer.html';
+?>
 </div>
 </body>
 </html>

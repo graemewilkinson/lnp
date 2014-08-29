@@ -32,12 +32,10 @@ while ($imagerow = mysql_fetch_row($imageresult)) {
     print "<div class='clientpagebtm'>";
     print "<h3>$companyname Testimonial</h3>\n";
     print "<blockquote>$testimonialcontent</blockquote>\n";
-    print "<p>$name</p>";
-    print "</div>";
+    print "<p>$name</p>\n";
+    print "</div>\n";
+    include 'footer.html';
 ?>
-<div style="clear: both;"></div>
 </div>
-
-
 </body>
 </html>

@@ -24,6 +24,9 @@ while ($row = mysql_fetch_row($result)) {
 }
 ?>
             </div>
+<?php
+include 'footer.html'
+?>
     </div>
     </body>
 </html>    
