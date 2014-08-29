@@ -22,6 +22,13 @@ print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>\n";
 }
 else { "\n";
 }
+if ($page == ourwork){
+    print "<style>";
+    print "footer{\n";
+    print "margin-top: 0;\n";
+    print "}\n";
+    print "</style>\n";
+}
 ?>
     <title>
       London News Pictures | Public Relations Photography
