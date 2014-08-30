@@ -13,15 +13,12 @@ include 'header.php';
       <img src="img/?kitchen_adventurer_cheesecake_brownie.jpg" />
       <div class="slide_text">
         <div class="slide_title">Title of Slide 1</div>
-        <div class="slide_byline">Teaser text for slide 1</div>
-      </div>
       </div>
     </li>
     <li>
       <img src="img/?kitchen_adventurer_donut.jpg" />
       <div class="slide_text">
         <div class="slide_title">Title of Slide 1</div>
-        <div class="slide_byline">Teaser text for slide 1</div>
       </div>
     </li>
   </ul>
