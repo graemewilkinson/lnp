@@ -1,5 +1,8 @@
 <html lang="en">
 <head>
+<script>
+document.cookie = "device_dimensions=" + screen.width + "x" + screen.height;
+</script>
     <meta content="text/html; charset=utf-8"
           http-equiv="Content-Type">
         

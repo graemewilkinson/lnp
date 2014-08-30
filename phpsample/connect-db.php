@@ -3,7 +3,7 @@
 // server info
 $server = 'mysql.gwilki01.wdd1314.bbkweb.org';
 $user = 'gwilki01';
-$pass = 'Edahze45imei';
+$pass = 'Chiegai0pa';
 $db = 'gwilki01';
 
 // connect to the database

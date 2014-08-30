@@ -20,7 +20,7 @@ function spamcheck($field) {
 if (!isset($_POST["submit"])) {
   ?>
   <h2>Contact Us Form</h2>
-    <div>Please complete the below form to get a fast response from us.</div>
+    <p>Please complete the below form to get a fast response from us.</p>
   <!--thanks to chriscoyer for his example that helped me make this form adaptive http://codepen.io/chriscoyier/pen/DmnlJ-->
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
   <div>
