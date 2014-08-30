@@ -6,7 +6,7 @@ include 'login.php';
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-$sql = 'SELECT img.imagelink, img.imagedes, img.ref, img.logo FROM testimonials LEFT JOIN img ON testimonials.id=img.id AND img.logo = TRUE ORDER BY testimonials.id LIMIT 3';
+$sql = 'SELECT img.imagelink, img.imagedes, testimonials.ref, img.logo FROM testimonials LEFT JOIN img ON testimonials.id=img.id AND img.logo = TRUE ORDER BY testimonials.id';
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
@@ -29,5 +29,11 @@ while ($row = mysql_fetch_row($result)) {
     print "opacity: 0;\n";
     print "filter: alpha(opacity=0);\n";
     print "}\n";
-}}
+}
+    else {
+    print ".$ref\n{\n";
+    print "height: 50px;\n";
+    print "}\n";
+}
+}
 ?>

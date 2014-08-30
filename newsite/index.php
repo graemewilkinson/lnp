@@ -24,7 +24,7 @@ include 'login.php';
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-$sql = 'SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, img.ref, img.logo FROM testimonials LEFT JOIN img ON testimonials.id=img.id AND img.logo = TRUE ORDER BY testimonials.id LIMIT 3';
+$sql = 'SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, testimonials.ref, img.logo FROM testimonials LEFT JOIN img ON testimonials.id=img.id AND img.logo = TRUE ORDER BY testimonials.id LIMIT 3';
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
@@ -34,6 +34,9 @@ while ($row = mysql_fetch_row($result)) {
     list ($id, $companyname, $testimonialcontent, $name, $imagelink, $imagedes, $ref, $logo) = $row;
     if ($logo == TRUE) {
     print "<div class='$ref'><img src='img/$imagelink' alt='$imagedes' /></div>\n";
+}
+    else {
+    print "<div class='$ref'></div>\n";
 }
     print "<h3>$companyname</h3>\n";
     print "<blockquote>$testimonialcontent</blockquote>\n";
