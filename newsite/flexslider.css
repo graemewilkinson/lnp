@@ -89,17 +89,3 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
-
-div.slide_text {
-  background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.5);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
-  bottom: 0;
-  color: #fff;
-  display: block;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /* IE6ÐIE9 */
-  left: 0;
-  padding: 2% 0 2% 2%;
-  position: absolute;
-  width: 98.5%;
-  zoom: 1;
-}

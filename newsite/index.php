@@ -11,15 +11,9 @@ include 'header.php';
   <ul class="slides">
     <li>
       <img src="img/?kitchen_adventurer_cheesecake_brownie.jpg" />
-      <div class="slide_text">
-        <div class="slide_title">Title of Slide 1</div>
-      </div>
     </li>
     <li>
       <img src="img/?kitchen_adventurer_donut.jpg" />
-      <div class="slide_text">
-        <div class="slide_title">Title of Slide 1</div>
-      </div>
     </li>
   </ul>
 </div>

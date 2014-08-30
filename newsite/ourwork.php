@@ -2,6 +2,9 @@
 <?php
 $page = "ourwork";
 include 'header.php';
+?>
+<p class="tagline">Below is a selection of images which link to galleries of our work for past clients. You can read the testimonials, the brief and see a selection of photography we have completed for that client by clicking on the relevant image.</p>
+<?php
 include 'login.php';
 
 $link = mysql_connect($hostname,$username,$password);

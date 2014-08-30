@@ -2,6 +2,9 @@
 <?php
 $page = "clientpage";
 include 'header.php';
+?>
+<p class="breadcrumb"><a href="ourwork.php">Our Work</a>/Client Page</p>
+<?php
 include 'login.php';
 
 $link = mysql_connect($hostname,$username,$password);
@@ -16,7 +19,7 @@ $imageresult = mysql_query($images,$link) or die("Unable to select: ".mysql_erro
 
  $row = mysql_fetch_row($result);
     list ($id, $companyname, $testimonialcontent, $name, $brief) = $row;
-    print "<h1>$companyname</h1>\n";
+    print "<h2 class='client'>$companyname</h2>\n";
     print "<div class='clearfix mosaicflow'>\n";
 while ($imagerow = mysql_fetch_row($imageresult)) {
     list ($imagelink, $imagedes) = $imagerow;

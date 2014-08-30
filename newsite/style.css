@@ -45,6 +45,19 @@ div.testblock
     float: left;
     margin: 0 5%;
 }
+h2.client
+{
+  margin: 2%;  
+}
+.breadcrumb
+{
+    margin: 2% 0 0 2%;
+    color: grey;
+}
+.breadcrumb a:visited
+{
+    color: grey;
+}
 
 #menu {
   /* List style */
@@ -160,7 +173,7 @@ div.contactpage
 {
     width: 45%;
     float: left;
-    margin: 2%;
+    margin: 0 2%;
 }
 input#Field1.field.text.fn
 {
