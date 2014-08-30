@@ -98,8 +98,8 @@ div.slide_text {
   display: block;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /* IE6ÐIE9 */
   left: 0;
-  padding: 1em;
+  padding: 2% 0 2% 2%;
   position: absolute;
-  width: 100%;
+  width: 98.5%;
   zoom: 1;
 }
