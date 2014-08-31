@@ -49,7 +49,7 @@ while ($row = mysql_fetch_row($result)) {
 ?>
             </div>
 <?php
-include 'footer.html';
+include 'footer.php';
 ?>
     </div>
 </body> 

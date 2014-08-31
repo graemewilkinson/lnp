@@ -23,7 +23,7 @@ while ($row = mysql_fetch_row($result)) {
     print "</div>\n";
 }
 print "</div>\n";
-include 'footer.html';
+include 'footer.php';
 ?>
 </div>
 

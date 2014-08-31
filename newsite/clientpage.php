@@ -37,7 +37,7 @@ while ($imagerow = mysql_fetch_row($imageresult)) {
     print "<blockquote>$testimonialcontent</blockquote>\n";
     print "<p>$name</p>\n";
     print "</div>\n";
-    include 'footer.html';
+    include 'footer.php';
 ?>
 </div>
 </body>

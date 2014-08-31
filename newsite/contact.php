@@ -76,7 +76,7 @@ if (!isset($_POST["submit"])) {
       // message lines should not exceed 70 characters (PHP rule), so wrap it
       $message = wordwrap($message, 70);
       // send mail
-      mail("graeme.wilkinson@me.com",$subject,$realname,$message,"From: $from\n");
+      mail("graeme.wilkinson@me.com",$subject,$message,"From: $from\n");
       echo "<div class='contactpage'>\n";
       echo "Thank you for sending us a message";
       echo "</div>";
@@ -92,8 +92,14 @@ if (!isset($_POST["submit"])) {
 <script>
   $('.email').attr('href', 'mailto:' + 'graeme' + '.' + 'wilkinson' + '@' + 'me' + '.' + 'com');
 </script>
+<div class="contactpage">
+<h2>Our telephone number</h2>
+<p>We have to admit that we're not very often able to pick up the phone and especially prefer first contact by email, we're directors, but we work in news photography every day and have busy lives so don't always find time to answer the phone. If you need to phone us then please do, but you may have better luck with email.</p>
+<a class=phone href=tel:zerosevensevenninetwofourzerotwosevensixfive><img class="phoneimg" src="img/phoneno.svg" alt"call us on zero double seven nine two four zero two seven six five" /></a>
+</div>
+
 <?php
-include 'footer.html';
+include 'footer.php';
 ?>
 </div>
 </body>
