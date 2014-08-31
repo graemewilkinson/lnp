@@ -13,47 +13,89 @@ document.cookie = "device_dimensions=" + screen.width + "x" + screen.height;
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
 <script src='modernizr.custom.22910.js'></script>
 <?php
-if ($page == home) {
+if ($page == 'home') {
 print "<link rel='stylesheet'\nhref='flexslider.css'\ntype='text/css'>\n";
 print "<link rel='stylesheet'\nhref='round.php'\ntype='text/css'>\n";
 print "<script src='jquery.flexslider.js'></script>\n";
 print "<script type='text/javascript'>\n$(window).load(function(){\n$('.flexslider').flexslider();\n});\n</script>\n";
 }
-elseif ($page == clientpage || $page == ourwork){
+elseif ($page == 'clientpage' || $page == 'ourwork'){
 print "<script src='jquery.mosaicflow.min.js'></script>\n";
 print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>\n";
 }
+elseif ($page == 'testimonials'){
+    print "<link rel='stylesheet'\nhref='round.php?page=$page'\ntype='text/css'>\n";
+}
 else { "\n";
 }
-if ($page == ourwork){
+if ($page == 'ourwork'){
     print "<style>";
     print "footer{\n";
     print "margin-top: 0;\n";
     print "}\n";
     print "</style>\n";
 }
+    print "<title>";
+    if ($page == 'home'){
+        print "London News Pictures | Public Relations Photography\n";
+    }
+    elseif ($page == 'clientpage'){
+        print "London News Pictures | Public Relations Photography | Our Work | Client Page\n";
+    } 
+        elseif ($page == 'ourwork'){
+        print "London News Pictures | Public Relations Photography | Our Work\n";
+    }
+        elseif ($page == 'testimonials'){
+        print "London News Pictures | Public Relations Photography | Testimonials\n";
+    }
+        elseif ($page == 'contactus'){
+        print "London News Pictures | Public Relations Photography | Contact Us\n";
+    }
+    print "</title>";
 ?>
-    <title>
-      London News Pictures | Public Relations Photography
-    </title>
+    
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="retina.css" media="screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)" />
     <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 1024px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 480px)" />
+    <?php
+    if ($page == testimonials || $page == home){
+    print "<link rel='stylesheet' type='text/css' href='roundstack.php' media='screen and (max-width: 1024px)' />\n";
+}
+?>
+    
 </head>
 <body>
 <div class="wrapper">
 <header>
-        <h1>
-          <img alt="London News Pictures"
+    <?php if($page == 'home'){
+    }
+    else {
+        print "<a href='index.php'>";
+    }
+    ?><img alt="London News Pictures | Public Relations Photography"
               class="logo"
-              src="img/LNP_PR_167px.jpg">
-        </h1>
-        <div class="toptitle">
-          Public Relations Photography
-        </div>
-        <div style="clear: both"></div>
+              src="img/lnplogo.svg"><?php if($page == 'home'){
+    }
+    else {
+        print "</a>\n";
+    }
+        if ($page == 'home'){
+        print "<h1>Public Relations Photography</h1>\n";
+         }
+        elseif ($page == 'ourwork'){
+        print "<h1>Our Work</h1>\n";
+        }
+        elseif ($page == 'testimonials'){
+        print "<h1>Testimonials</h1>\n";
+        }
+        elseif ($page == 'contactus'){
+        print "<h1>Contact Us</h1>\n";
+        }
+        elseif ($page == 'clientpage'){
+        print "<h1>Our work for $companyname</h1>\n";
+        }
+        ?>
 </header>
         <div>
    <ul id="menu">

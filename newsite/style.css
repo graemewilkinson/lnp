@@ -14,6 +14,14 @@ div.wrapper
     margin: auto;
     overflow: auto;
 }
+h1
+{
+    display: none;
+}
+header
+{
+    overflow: auto;
+}
 p.tagline
 {
 	clear: both;
@@ -100,19 +108,9 @@ h2.client
 }
 img.logo
 {
-	float:left;
-	padding-bottom:2%;
-	width: 33%;
-	max-width: 150px;
-}
-
-div.toptitle
-{
-	float:left;
-	font-size:1.5em;
-	font-weight:700;
-	margin:2.5% 0 0;
-	padding-bottom:2%;
+	width: 25%;
+	max-width: 180px;
+	margin: 2%;
 }
 .mosaicflow__column
 {

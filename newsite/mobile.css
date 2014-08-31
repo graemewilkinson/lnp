@@ -28,3 +28,9 @@ div.clientpagebtm
 {
   opacity: 1;
 }
+img.logo
+{
+    display: block;
+    margin: 2% auto;
+    width: 50%;
+}

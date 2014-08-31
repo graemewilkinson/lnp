@@ -1,6 +1,8 @@
 <?php
+    $page = $_GET['page'];
+    error_reporting(E_ALL); ini_set('display_errors', 1);
     header("Content-type: text/css; charset: UTF-8");
-
+    
 include 'login.php';
 
 $link = mysql_connect($hostname,$username,$password);
@@ -23,6 +25,9 @@ while ($row = mysql_fetch_row($result)) {
     print "background: url('img/$imagelink') no-repeat;\n";
     print "background-size: 50px 50px;\n";
     print "margin: auto;\n";
+    if ($page == 'testimonials'){
+    print "margin-top: 5%;\n";
+    }
     print "}\n";
     
     print ".$ref img {\n";
@@ -33,6 +38,9 @@ while ($row = mysql_fetch_row($result)) {
     else {
     print ".$ref\n{\n";
     print "height: 50px;\n";
+    if ($page == 'testimonials'){
+    print "margin-top: 5%;\n";
+    }
     print "}\n";
 }
 }

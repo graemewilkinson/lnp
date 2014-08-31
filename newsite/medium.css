@@ -19,3 +19,7 @@ div.contactpage
     float: left;
     margin: 3%
 }
+img.logo
+{
+	width: 40%;
+}
