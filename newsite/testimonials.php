@@ -3,6 +3,7 @@
 $page = "testimonials";
 include 'header.php';
 ?>
+<p class="tagline">Here we have collated all the testimonials from previous clients we have worked with. These are clients who have given us a testimonial after our work is complete and permission to publish the work we completed for them. We hope this gives you a good overview of the kind of service we offer. You can click read more to see the brief and the rest of the images relating to that client.</p>
 <div class='testblock'>    
 <?php
 include 'login.php';
@@ -10,7 +11,7 @@ include 'login.php';
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
 
-$sql = 'SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, testimonials.ref, img.logo FROM testimonials LEFT JOIN img ON testimonials.id=img.id AND img.logo = TRUE ORDER BY testimonials.id';
+$sql = 'SELECT testimonials.id, testimonials.companyname, testimonials.testimonialcontent, testimonials.name, img.imagelink, img.imagedes, testimonials.ref, img.logo FROM testimonials LEFT JOIN img ON testimonials.id=img.id AND img.logo = TRUE ORDER BY testimonials.id DESC';
 
 // run the query
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());

@@ -23,10 +23,18 @@ if (!isset($_POST["submit"])) {
     <p>Please complete the below form to get a fast response from us.</p>
   <!--thanks to chriscoyer for his example that helped me make this form adaptive http://codepen.io/chriscoyier/pen/DmnlJ-->
     <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
-  <div>
-    <label class="desc" id="title1" for="Field1">Subject</label>
+    
     <div>
-      <input id="Field1" name="subject" type="text" class="field text fn" value="" size="8" tabindex="1">
+    <label class="desc" id="title1" for="Field1">Your Full Name</label>
+    <div>
+      <input id="Field1" name="name" type="text" class="field text fn" value="" size="8" tabindex="1">
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title2" for="Field2">Subject</label>
+    <div>
+      <input id="Field2" name="subject" type="text" class="field text fn" value="" size="8" tabindex="2">
     </div>
   </div>
     
@@ -68,7 +76,9 @@ if (!isset($_POST["submit"])) {
       $message = wordwrap($message, 70);
       // send mail
       mail("graeme.wilkinson@me.com",$subject,$message,"From: $from\n");
+      echo "<div class='contactpage'>\n";
       echo "Thank you for sending us a message";
+      echo "</div>";
     }
   }
 }
@@ -76,7 +86,7 @@ if (!isset($_POST["submit"])) {
 </div>
 <div class="contactpage">
 <h2>Prefer to email us directly?</h2>
-<p>If that's the case, we have a link to our <a class="email" href="mailto:graeme dot wilkinson at me dot com">email</a> here to stop the spambots making use of it!</p>
+<p>If that's the case, we have a link to our <a class="email" href="mailto:graemedotwilkinsonatmedotcom">email</a> here to stop the spambots making use of it!</p>
 </div>
 <script>
   $('.email').attr('href', 'mailto:' + 'graeme' + '.' + 'wilkinson' + '@' + 'me' + '.' + 'com');
