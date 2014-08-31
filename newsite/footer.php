@@ -5,7 +5,7 @@
         <li><a class="email" href="mailto:graemedotwilkinsonatmedotcom"><img src="img/at.svg" alt="Email logo" /></a></li>
         <?php
         if ($page == 'contactus'){
-            print "<li><a class='phone' href='tel:zerosevenseventwofourzerotwosevensixfive'><img src='img/phone.svg' alt='phone logo'</a></li>";
+            print "<li><a class='phone' href='tel:zerosevenseventwofourzerotwosevensixfive'><img src='img/phone.svg' alt='phone logo' /></a></li>";
         }
         ?>
         

@@ -7,17 +7,27 @@ include 'header.php';
 <p class="tagline">
         <em>London News Pictures, (Public Relations Photgraphy) specialises in covering corporate events and generally catering for the needs to large and small companies alike. Run by Stephen Juliet and Robert Geoffries the team organise the resources needed to meet your requirement at the correct budget level. When you contact us you will be liaising directly with the directors. Stephen and Geoff work together, they are friendly, approachable and reliable, they also often seek the help of reliable, honest and friendly photographers from main company, London News Pictures News Photography.</em>
       </p>
+
  <div class="flexslider">
   <ul class="slides">
-    <li>
-      <img src="img/?boatslider.jpg" alt="two men rowing on boat as part of corporate event" />
-    </li>
-    <li>
-      <img src="img/?saxoslider.jpg" alt="Saxophonist at a even run by a company for their staff" />
-    </li>
-    <li>
-      <img src="img/?dinnerslider.jpg" alt="Large event by the SKY Corporation, many staff seated in hall having meals" />
-    </li>
+<?php
+include 'login.php';
+
+$link = mysql_connect($hostname,$username,$password);
+mysql_select_db($database) or die("Unable to select database");
+
+$sql = 'SELECT sliderlink, des FROM slider ORDER BY pos';
+
+// run the query
+$result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
+
+while ($row = mysql_fetch_row($result)) {
+    list ($sliderlink, $des) = $row;
+    print "<li>\n";
+    print "<img src='img/?$sliderlink' alt='$des' />\n";
+    print "</li>";
+}
+?>
   </ul>
 </div>
             <div class="testblock">
@@ -52,5 +62,5 @@ while ($row = mysql_fetch_row($result)) {
 include 'footer.php';
 ?>
     </div>
-</body> 
-    
+</body>
+</html>

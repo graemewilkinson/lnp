@@ -95,7 +95,7 @@ if (!isset($_POST["submit"])) {
 <div class="contactpage">
 <h2>Our telephone number</h2>
 <p>We have to admit that we're not very often able to pick up the phone and especially prefer first contact by email, we're directors, but we work in news photography every day and have busy lives so don't always find time to answer the phone. If you need to phone us then please do, but you may have better luck with email.</p>
-<a class=phone href=tel:zerosevensevenninetwofourzerotwosevensixfive><img class="phoneimg" src="img/phoneno.svg" alt"call us on zero double seven nine two four zero two seven six five" /></a>
+<a class=phone href=tel:zerosevensevenninetwofourzerotwosevensixfive><img class="phoneimg" src="img/phoneno.svg" alt="call us on zero double seven nine two four zero two seven six five" /></a>
 </div>
 
 <?php
