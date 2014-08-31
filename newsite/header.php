@@ -68,34 +68,32 @@ if ($page == 'ourwork'){
 <body>
 <div class="wrapper">
 <header>
+    <h1>
     <?php if($page == 'home'){
     }
     else {
         print "<a href='index.php'>";
     }
-    ?><img alt="London News Pictures | Public Relations Photography"
-              class="logo"
-              src="img/lnplogo.svg"><?php if($page == 'home'){
-    }
-    else {
-        print "</a>\n";
-    }
-        if ($page == 'home'){
-        print "<h1>Public Relations Photography</h1>\n";
+    ?><img alt="London News Pictures | Public Relations Photography | <?php
+    if ($page == 'home'){
+        print "Home Page";
          }
         elseif ($page == 'ourwork'){
-        print "<h1>Our Work</h1>\n";
+        print "Our Work";
         }
         elseif ($page == 'testimonials'){
-        print "<h1>Testimonials</h1>\n";
+        print "Testimonials";
         }
         elseif ($page == 'contactus'){
-        print "<h1>Contact Us</h1>\n";
+        print "Contact Us";
         }
         elseif ($page == 'clientpage'){
-        print "<h1>Our work for $companyname</h1>\n";
+        print "Our work for $companyname";
         }
-        ?>
+        ?>"
+              class="logo"
+              src="img/lnplogo.svg">
+</h1>
 </header>
         <div>
    <ul id="menu">

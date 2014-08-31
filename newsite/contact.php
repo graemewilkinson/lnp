@@ -2,28 +2,22 @@
 <?php
 $page = "contactus";
 include 'header.php';
-function spamcheck($field) {
-  // Sanitize e-mail address
-  $field=filter_var($field, FILTER_SANITIZE_EMAIL);
-  // Validate e-mail address
-  if(filter_var($field, FILTER_VALIDATE_EMAIL)) {
-    return TRUE;
-  } else {
-    return FALSE;
-  }
-}
+$id = $_GET['id'];
 ?>
 <div class="contactpage">
-
-<?php 
-// display form if user has not clicked submit
-if (!isset($_POST["submit"])) {
-  ?>
-  <h2>Contact Us Form</h2>
+<?php if($id == 'submitted') : ?>
+    <h2>Thank you for sending us an email</h2>
+    <p>Thank you for submitting an email via our online form. We can confirm it has been received and you should expect to hear from us within 2 working days, excluding today. Should you not hear from us by then, please send a direct email using the link on this page, or at the bottom of the footer, or call us.</p>
+    <p>We look forward to replying to you, Stephen and James</p>
+<?php else : ?>
+      <h2>Contact Us Form</h2>
     <p>Please complete the below form to get a fast response from us.</p>
-  <!--thanks to chriscoyer for his example that helped me make this form adaptive http://codepen.io/chriscoyier/pen/DmnlJ-->
+  <!--thanks to Christoper for his example that helped me make this form adaptive http://codepen.io/Christopher/pen/DmnlJ-->
     <form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
-    
+    <input type=hidden name="recipient" value="gwilki01#bbkweb.org">
+      <input type=hidden name="required" value="email,realname,comment">
+        <input type=hidden name="redirect" value="http://gwilki01.wdd1314.bbkweb.org/newsite/contact.php?id=submitted">
+      
     <div>
     <label class="desc" id="title1" for="Field1">Your Full Name</label>
     <div>
@@ -36,7 +30,7 @@ if (!isset($_POST["submit"])) {
       Your Email Address
     </label>
     <div>
-      <input id="Field2" name="from" type="email" spellcheck="false" value="" maxlength="255" tabindex="2"> 
+      <input id="Field2" name="email" type="email" value="" maxlength="255" tabindex="2"> 
    </div>
   </div>
    
@@ -53,14 +47,15 @@ if (!isset($_POST["submit"])) {
     </label>
   
     <div>
-      <textarea id="Field4" name="message" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+      <textarea id="Field4" name="comment" rows="10" cols="50" tabindex="4"></textarea>
     </div>
   </div>
   <div>
-      <input id="saveForm" type="submit" value="Submit" name="submit">
+      <input id="saveForm" type="submit">
     </div>
   </form>
-  
+<?php endif; ?>
+
 </div>
 <div class="contactpage">
 <h2>Prefer to email us directly?</h2>
