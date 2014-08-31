@@ -5,7 +5,7 @@ include 'header.php';
 ?>
 
 <p class="tagline">
-        <em>London News Pictures, (Public Relations Photgraphy) specialises in covering corporate events and generally catering for the needs to large and small companies alike. Run by Stephen Juliet and Robert Geoffries the team organise the resources needed to meet your requirement at the correct budget level. When you contact us you will be liaising directly with the directors. Stephen and Geoff work together, they are friendly, approachable and reliable, they also often seek the help of reliable, honest and friendly photographers from main company, London News Pictures News Photography.</em>
+        <em>London News Pictures, (Public Relations Photography) specialises in covering corporate events and generally catering for the needs from large to small companies alike. Run by Stephen Juliet and Robert Geoffries the team organise the resources needed to meet your requirement at the correct budget level. When you contact us you will be liaising directly with the directors. Stephen and Geoff work together, they are friendly, approachable and reliable, they also often seek the help of reliable, honest, professional and friendly photographers from main company, London News Pictures News Photography.</em>
       </p>
 
  <div class="flexslider">

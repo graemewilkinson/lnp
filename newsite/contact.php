@@ -22,7 +22,7 @@ if (!isset($_POST["submit"])) {
   <h2>Contact Us Form</h2>
     <p>Please complete the below form to get a fast response from us.</p>
   <!--thanks to chriscoyer for his example that helped me make this form adaptive http://codepen.io/chriscoyier/pen/DmnlJ-->
-    <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+    <form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
     
     <div>
     <label class="desc" id="title1" for="Field1">Your Full Name</label>
@@ -60,30 +60,7 @@ if (!isset($_POST["submit"])) {
       <input id="saveForm" type="submit" value="Submit" name="submit">
     </div>
   </form>
-  <?php 
-} else {  // the user has submitted the form
-  // Check if the "from" input field is filled out
-  if (isset($_POST["from"])) {
-    // Check if "from" email address is valid
-    $mailcheck = spamcheck($_POST["from"]);
-    if ($mailcheck==FALSE) {
-      echo "We're afraid we cannot accept your message in it's current state, please press back and ensure your email address is correct and all fields are complete.";
-    } else {
-      $from = $_POST["from"]; // sender
-      $subject = $_POST["subject"];
-      $message = $_POST["message"];
-      $realname = $_POST["realname"];
-      // message lines should not exceed 70 characters (PHP rule), so wrap it
-      $message = wordwrap($message, 70);
-      // send mail
-      mail("graeme.wilkinson@me.com",$subject,$message, $realname, "From: $from\n");
-      echo "<div class='contactpage'>\n";
-      echo "Thank you for sending us a message";
-      echo "</div>";
-    }
-  }
-}
-?>
+  
 </div>
 <div class="contactpage">
 <h2>Prefer to email us directly?</h2>
