@@ -72,11 +72,11 @@ if (!isset($_POST["submit"])) {
       $from = $_POST["from"]; // sender
       $subject = $_POST["subject"];
       $message = $_POST["message"];
-      $realname = $POST["realname"];
+      $realname = $_POST["realname"];
       // message lines should not exceed 70 characters (PHP rule), so wrap it
       $message = wordwrap($message, 70);
       // send mail
-      mail("graeme.wilkinson@me.com",$subject,$message,"From: $from\n");
+      mail("graeme.wilkinson@me.com",$subject,$message, $realname, "From: $from\n");
       echo "<div class='contactpage'>\n";
       echo "Thank you for sending us a message";
       echo "</div>";
