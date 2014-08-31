@@ -27,24 +27,24 @@ if (!isset($_POST["submit"])) {
     <div>
     <label class="desc" id="title1" for="Field1">Your Full Name</label>
     <div>
-      <input id="Field1" name="name" type="text" class="field text fn" value="" size="8" tabindex="1">
+      <input id="Field1" name="realname" type="text" class="field text fn" value="" size="8" tabindex="1">
     </div>
   </div>
-    
-  <div>
-    <label class="desc" id="title2" for="Field2">Subject</label>
-    <div>
-      <input id="Field2" name="subject" type="text" class="field text fn" value="" size="8" tabindex="2">
-    </div>
-  </div>
-    
-  <div>
-    <label class="desc" id="title3" for="Field3">
-      Email
+   
+   <div>
+    <label class="desc" id="title2" for="Field2">
+      Your Email Address
     </label>
     <div>
-      <input id="Field3" name="from" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+      <input id="Field2" name="from" type="email" spellcheck="false" value="" maxlength="255" tabindex="2"> 
    </div>
+  </div>
+   
+  <div>
+    <label class="desc" id="title3" for="Field3">Subject</label>
+    <div>
+      <input id="Field3" name="subject" type="text" class="field text fn" value="" size="8" tabindex="3">
+    </div>
   </div>
     
   <div>
@@ -67,15 +67,16 @@ if (!isset($_POST["submit"])) {
     // Check if "from" email address is valid
     $mailcheck = spamcheck($_POST["from"]);
     if ($mailcheck==FALSE) {
-      echo "Invalid input";
+      echo "We're afraid we cannot accept your message in it's current state, please press back and ensure your email address is correct and all fields are complete.";
     } else {
       $from = $_POST["from"]; // sender
       $subject = $_POST["subject"];
       $message = $_POST["message"];
+      $realname = $POST["realname"];
       // message lines should not exceed 70 characters (PHP rule), so wrap it
       $message = wordwrap($message, 70);
       // send mail
-      mail("graeme.wilkinson@me.com",$subject,$message,"From: $from\n");
+      mail("graeme.wilkinson@me.com",$subject,$realname,$message,"From: $from\n");
       echo "<div class='contactpage'>\n";
       echo "Thank you for sending us a message";
       echo "</div>";

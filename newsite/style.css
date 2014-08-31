@@ -171,13 +171,17 @@ div.contactpage
 {
     width: 45%;
     float: left;
-    margin: 0 2%;
+    margin: 1em 2%;
 }
 input#Field1.field.text.fn
 {
     width: 85%
 }
 input#Field3
+{
+    width: 85%;
+}
+input#Field2
 {
     width: 85%;
 }
