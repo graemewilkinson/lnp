@@ -53,7 +53,7 @@ include 'header.php';
     </div>
   </div>
   <div>
-      <input id="saveForm" type="submit">
+      <input type="submit" value="Send Message">
     </div>
   </form>
 <?php endif; ?>
