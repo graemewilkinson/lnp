@@ -18,6 +18,11 @@ h1
 {
     margin: 0;
 }
+h2.introtitle
+{
+	font-size: 1.3em;
+	text-align: center;
+}
 header
 {
     overflow: auto;
@@ -26,6 +31,7 @@ p.tagline
 {
 	clear: both;
         margin: 2%;
+        margin-bottom: 3%;
 }
 img.main
 {
