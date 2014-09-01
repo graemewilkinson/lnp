@@ -93,7 +93,7 @@ if ($page == 'ourwork'){
         ?>"
               class="logo"
               src="img/lnplogo.svg">
-</h1>
+</a></h1>
 </header>
         <div>
    <ul id="menu">

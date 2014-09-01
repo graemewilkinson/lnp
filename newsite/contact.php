@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <?php
+$id = $_GET['id'];
 $page = "contactus";
 include 'header.php';
-$id = $_GET['id'];
 ?>
 <div class="contactpage">
 <?php if($id == 'submitted') : ?>
     <h2>Thank you for sending us an email</h2>
     <p>Thank you for submitting an email via our online form. We can confirm it has been received and you should expect to hear from us within 2 working days, excluding today. Should you not hear from us by then, please send a direct email using the link on this page, or at the bottom of the footer, or call us.</p>
     <p>We look forward to replying to you, Stephen and James</p>
+    
+    <a href="http://gwilki01.wdd1314.bbkweb.org/newsite/contact.php">Send another message</a>
 <?php else : ?>
       <h2>Contact Us Form</h2>
     <p>Please complete the below form to get a fast response from us.</p>
