@@ -93,7 +93,7 @@ if ($page == 'ourwork'){
         ?>"
               class="logo"
               src="img/lnplogo.svg">
-   <?php> if ($page == 'home'){
+   <?php if ($page == 'home'){
     }
     else {
     print "</a>";
