@@ -33,6 +33,11 @@ p.tagline
         margin: 2%;
         margin-bottom: 3%;
 }
+img.mosiac
+{
+    width: 620px;
+    height: 393px;
+}
 img.main
 {
     width: 80%;

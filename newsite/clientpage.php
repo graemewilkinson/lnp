@@ -24,7 +24,7 @@ $imageresult = mysql_query($images,$link) or die("Unable to select: ".mysql_erro
 while ($imagerow = mysql_fetch_row($imageresult)) {
     list ($imagelink, $imagedes) = $imagerow;
     print "<div class='mosaicflow__item'>\n";
-    print "<img src='img/?$imagelink' alt='$imagedes'>\n";
+    print "<img class='mosiac' src='img/?$imagelink' alt='$imagedes'>\n";
     print "</div>\n";
 }
     print "</div>";
