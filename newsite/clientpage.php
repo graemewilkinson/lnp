@@ -2,9 +2,12 @@
 <?php
 $page = "clientpage";
 include 'header.php';
-?>
-<p class="breadcrumb"><a href="ourwork.php">Our Work</a>/Client Page</p>
-<?php
+if (from == 'testi'){
+print "<p class='breadcrumb'><a href='testimonials.php'>Testimonials</a>/Client Page</p>";
+}
+esle {
+ print "<p class='breadcrumb'><a href='ourwork.php'>Our Work</a>/Client Page</p>";
+}
 include 'login.php';
 
 $link = mysql_connect($hostname,$username,$password);
