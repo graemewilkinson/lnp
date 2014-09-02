@@ -5,7 +5,7 @@ include 'header.php';
 if (from == 'testi'){
 print "<p class='breadcrumb'><a href='testimonials.php'>Testimonials</a>/Client Page</p>";
 }
-esle {
+else {
  print "<p class='breadcrumb'><a href='ourwork.php'>Our Work</a>/Client Page</p>";
 }
 include 'login.php';
