@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-$from = $_GET['from']
+$_GET['from']
 $page = "clientpage";
 include 'header.php';
 if (from == 'testi'){
