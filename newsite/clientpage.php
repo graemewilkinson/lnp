@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <?php
-$_GET['from']
 $page = "clientpage";
 include 'header.php';
-if (from == 'testi'){
+if ($_GET["from"] == 'testi'){
 print "<p class='breadcrumb'><a href='testimonials.php'>Testimonials</a>/Client Page</p>";
 }
 else {
