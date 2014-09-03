@@ -1,5 +1,4 @@
-<?php
-    header("Content-type: text/css; charset: UTF-8");
+<?php header("Content-type: text/css; charset: UTF-8");
 
 include 'login.php';
 

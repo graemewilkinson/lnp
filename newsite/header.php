@@ -56,7 +56,7 @@ if ($page == 'ourwork'){
     
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="medium.css" media="screen and (max-width: 1024px)" />
+    <link rel="stylesheet" type="text/css" href="medium.php" media="screen and (max-width: 1024px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 568px)" />
     <?php
     if ($page == testimonials || $page == home){
