@@ -6,12 +6,13 @@ document.cookie = "device_dimensions=" + screen.width + "x" + screen.height;
     <meta content="text/html; charset=utf-8"
           http-equiv="Content-Type">
         
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic' rel='stylesheet' type='text/css'>
-    <link href="style.php"
-          rel="stylesheet"
-          type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic" rel="stylesheet" type="text/css">
+
+<?php
+    print "<link href=\"style.php?page=$page\" rel=\"stylesheet\" type=\"text/css\">\n";
+?>
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
-<script src='modernizr.custom.22910.js'></script>
+<script src="modernizr.custom.22910.js"></script>
 <?php
 if ($page == 'home') {
 print "<link rel='stylesheet'\nhref='flexslider.css'\ntype='text/css'>\n";
@@ -21,13 +22,6 @@ print "<script type='text/javascript'>\n$(window).load(function(){\n$('.flexslid
 elseif ($page == 'clientpage' || $page == 'ourwork'){
 print "<script src='jquery.mosaicflow.min.js'></script>\n";
 print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>\n";
-}
-if ($page == 'ourwork'){
-    print "<style>";
-    print "footer{\n";
-    print "margin-top: 0;\n";
-    print "}\n";
-    print "</style>\n";
 }
     print "<title>";
     if ($page == 'home'){

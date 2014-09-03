@@ -21,7 +21,7 @@ include 'header.php';
         <input type=hidden name="redirect" value="http://gwilki01.wdd1314.bbkweb.org/newsite/contact.php?id=submitted">
       
     <div>
-    <label class="desc" id="title1" for="Field1">Your Full Name</label>
+    <label class="desc" id="title1" for="Field1">Your Full Name <a class='required'>*</a></label>
     <div>
       <input id="Field1" name="realname" type="text" class="field text fn" value="" size="8" tabindex="1">
     </div>
@@ -29,7 +29,7 @@ include 'header.php';
    
    <div>
     <label class="desc" id="title2" for="Field2">
-      Your Email Address
+      Your Email Address <a class='required'>*</a>
     </label>
     <div>
       <input id="Field2" name="email" type="email" value="" maxlength="255" tabindex="2"> 
@@ -45,13 +45,14 @@ include 'header.php';
     
   <div>
     <label class="desc" id="title4" for="Field4">
-      Message
+      Message <a class='required'>*</a>
     </label>
   
     <div>
       <textarea id="Field4" name="comment" rows="10" cols="50" tabindex="4"></textarea>
     </div>
   </div>
+  <p class="required">Please note fields highlighted with an * are required</p>
   <div>
       <input type="submit" value="Send Message">
     </div>
@@ -61,15 +62,13 @@ include 'header.php';
 </div>
 <div class="contactpage">
 <h2>Prefer to email us directly?</h2>
-<p>If that's the case, we have a link to our <a class="email" href="mailto:graemedotwilkinsonatmedotcom">email</a> here to stop the spambots making use of it!</p>
+<p>If that's the case, please email us on <a href="mailto:graeme.wilkinson@monkeys.com">graeme.wilkinson@monkeys.com</a>, we'll get back to you as soon as possible.</p>
 </div>
-<script>
-  $('.email').attr('href', 'mailto:' + 'graeme' + '.' + 'wilkinson' + '@' + 'me' + '.' + 'com');
-</script>
+
 <div class="contactpage">
 <h2>Our telephone number</h2>
 <p>We have to admit that we're not very often able to pick up the phone and especially prefer first contact by email, we're directors, but we work in news photography every day and have busy lives so don't always find time to answer the phone. If you need to phone us then please do, but you may have better luck with email.</p>
-<a class=phone href=tel:zerosevensevenninetwofourzerotwosevensixfive><img class="phoneimg" src="img/phoneno.svg" alt="call us on zero double seven nine two four zero two seven six five" /></a>
+<a href=tel:07782502865>07782502865</a>
 </div>
 
 <?php

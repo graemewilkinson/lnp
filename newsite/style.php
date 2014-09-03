@@ -102,10 +102,6 @@ div.testimonial
 	display: inline-block;
 	vertical-align: top;
 }
-div.tcontainer
-{
-	
-}
 div.testblock
 {
     float: left;
@@ -210,7 +206,14 @@ float: left;
 width: 100%;
 background-color: #1b5886;
 color: white;
-margin-top: 3%;
+<?php
+if ($_GET["page"] == 'ourwork'){
+  print "margin-top: 0;\n";
+}
+else {
+    print "margin-top: 3%;\n";
+}
+?>
 }
 ul.social
 {
@@ -250,4 +253,9 @@ textarea#Field4
 img.phoneimg
 {
     width: 7em;
+}
+.required
+{
+    color: red;
+    font-size: 60%;
 }
