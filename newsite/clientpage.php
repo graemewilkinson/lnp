@@ -3,10 +3,10 @@
 $page = "clientpage";
 include 'header.php';
 if ($_GET["from"] == 'testi'){
-print "<p class='breadcrumb'><a href='testimonials.php'>Testimonials</a>/Client Page</p>";
+print "<p class='breadcrumb'><a href='index.php'>Home</a>/<a href='testimonials.php'>Testimonials</a>/Client Page</p>";
 }
 else {
- print "<p class='breadcrumb'><a href='ourwork.php'>Our Work</a>/Client Page</p>";
+ print "<p class='breadcrumb'><a href='index.php'>Home</a>/<a href='ourwork.php'>Our Work</a>/Client Page</p>";
 }
 include 'login.php';
 

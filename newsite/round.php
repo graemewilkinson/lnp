@@ -1,7 +1,6 @@
-<?php
+<?php header("Content-type: text/css; charset=utf-8");
     $page = $_GET['page'];
     error_reporting(E_ALL); ini_set('display_errors', 1);
-    header("Content-type: text/css; charset: UTF-8");
     
 include 'login.php';
 

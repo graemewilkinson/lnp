@@ -7,7 +7,7 @@ document.cookie = "device_dimensions=" + screen.width + "x" + screen.height;
           http-equiv="Content-Type">
         
 <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic' rel='stylesheet' type='text/css'>
-    <link href="style.css"
+    <link href="style.php"
           rel="stylesheet"
           type="text/css">
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
@@ -15,18 +15,12 @@ document.cookie = "device_dimensions=" + screen.width + "x" + screen.height;
 <?php
 if ($page == 'home') {
 print "<link rel='stylesheet'\nhref='flexslider.css'\ntype='text/css'>\n";
-print "<link rel='stylesheet'\nhref='round.php'\ntype='text/css'>\n";
 print "<script src='jquery.flexslider.js'></script>\n";
 print "<script type='text/javascript'>\n$(window).load(function(){\n$('.flexslider').flexslider();\n});\n</script>\n";
 }
 elseif ($page == 'clientpage' || $page == 'ourwork'){
 print "<script src='jquery.mosaicflow.min.js'></script>\n";
 print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>\n";
-}
-elseif ($page == 'testimonials'){
-    print "<link rel='stylesheet'\nhref='round.php?page=$page'\ntype='text/css'>\n";
-}
-else { "\n";
 }
 if ($page == 'ourwork'){
     print "<style>";
@@ -40,16 +34,28 @@ if ($page == 'ourwork'){
         print "London News Pictures | Public Relations Photography\n";
     }
     elseif ($page == 'clientpage'){
-        print "London News Pictures | Public Relations Photography | Our Work | Client Page\n";
+    include 'login.php';
+
+$link = mysql_connect($hostname,$username,$password);
+mysql_select_db($database) or die("Unable to select database");
+
+$sql ='SELECT companyname FROM testimonials WHERE id = '. $_GET['id'];
+
+// run the query
+$result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
+
+ $row = mysql_fetch_row($result);
+    list ($companyname) = $row;
+        print "$companyname | Our Work | London News Pictures | Public Relations Photography\n";
     } 
         elseif ($page == 'ourwork'){
-        print "London News Pictures | Public Relations Photography | Our Work\n";
+        print "Our Work | London News Pictures | Public Relations Photography\n";
     }
         elseif ($page == 'testimonials'){
-        print "London News Pictures | Public Relations Photography | Testimonials\n";
+        print "Testimonials | London News Pictures | Public Relations Photography\n";
     }
         elseif ($page == 'contactus'){
-        print "London News Pictures | Public Relations Photography | Contact Us\n";
+        print "Contact Us | London News Pictures | Public Relations Photography\n";
     }
     print "</title>";
 ?>
@@ -58,12 +64,6 @@ if ($page == 'ourwork'){
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="medium.php" media="screen and (max-width: 1024px)" />
     <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 568px)" />
-    <?php
-    if ($page == testimonials || $page == home){
-    print "<link rel='stylesheet' type='text/css' href='roundstack.php' media='screen and (max-width: 1024px)' />\n";
-}
-?>
-    
 </head>
 <body>
 <div class="wrapper">
@@ -74,7 +74,7 @@ if ($page == 'ourwork'){
     else {
         print "<a href='index.php'>";
     }
-    ?><img alt="London News Pictures | Public Relations Photography | <?php
+    ?><img alt="<?php
     if ($page == 'home'){
         print "Home Page";
          }

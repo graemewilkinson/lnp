@@ -1,4 +1,4 @@
-<?php header("Content-type: text/css; charset: UTF-8");
+<?php header("Content-type: text/css; charset=utf-8");
 
 include 'login.php';
 
@@ -12,9 +12,7 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 
 while ($row = mysql_fetch_row($result)) {
     list ($ref, $logo) = $row;
-    if ($logo == TRUE) {
-}
-    else {
+    if ($logo == FALSE) {
     print ".$ref\n{\n";
     print "display: none;\n";
     print "}\n";
