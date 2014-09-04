@@ -114,11 +114,11 @@ h2.client
 .breadcrumb
 {
     margin: 2% 0 0 2%;
-    color: grey;
+    color: #565656;
 }
 .breadcrumb a:visited
 {
-    color: grey;
+    color: #565656;
 }
 
 #menu {
