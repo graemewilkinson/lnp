@@ -19,7 +19,7 @@ while ($row = mysql_fetch_row($result)) {
 }
 }
 ?>
-.menu-item {
+#menu a {
   display: block;
   float: left;
   width: 50%; /* 100/number of items */
