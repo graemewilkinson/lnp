@@ -4,6 +4,7 @@ $page = "testimonials";
 include 'header.php';
 ?>
 <p class='tagline'>Here we have collated all the testimonials from previous clients we have worked with. These are clients who have given us a testimonial after our work is complete and permission to publish the work we completed for them. We hope this gives you a good overview of the kind of service we offer. You can click read more to see the brief and the rest of the images relating to that client.</p>
+
 <div class='testblock'>    
 <?php
 include 'login.php';
@@ -20,7 +21,7 @@ while ($row = mysql_fetch_row($result)) {
     print "<div class='testimonial'>\n";
     list ($id, $companyname, $testimonialcontent, $name, $imagelink, $imagedes, $ref, $logo) = $row;
     if ($logo == TRUE) {
-    print "<div class='$ref'><img src='img/$imagelink' alt='$imagedes' /></div>\n";
+    print "\n<div class='$ref'>\n<img src='img/$imagelink' alt='$imagedes' />\n</div>\n\n";
 }
     else {
     print "<div class='$ref'></div>\n";
@@ -28,7 +29,7 @@ while ($row = mysql_fetch_row($result)) {
     print "<h3>$companyname</h3>\n";
     print "<blockquote>$testimonialcontent</blockquote>\n";
     print "<p>$name - <a href='clientpage.php?id=$id&amp;from=testi'>read more...</a></p>\n";
-    print "</div>\n";
+    print "</div>\n\n";
 }
 ?>
             </div>

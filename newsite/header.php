@@ -68,7 +68,7 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
     else {
         print "<a href='index.php'>";
     }
-    ?><img alt="<?php
+    ?><img alt='<?php
     if ($page == 'home'){
         print "Home Page";
          }
@@ -84,9 +84,9 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
         elseif ($page == 'clientpage'){
         print "Our work for $companyname";
         }
-        ?>"
-              class="logo"
-              src="img/lnplogo.svg">
+        ?>'
+              class='logo'
+              src='img/lnplogo.svg'>
    <?php if ($page == 'home'){
     }
     else {
