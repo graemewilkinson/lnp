@@ -23,7 +23,7 @@ include 'header.php';
     <div>
     <label class='desc' id='title1' for='Field1'>Your Full Name <a class='required'>*</a></label>
     <div>
-      <input id='Field1' name='realname' type='text' class='field text fn' value='' size='8' tabindex='1'>
+      <input id='Field1' name='realname' type='text' class='field text fn' value='' size='8'>
     </div>
   </div>
    
@@ -32,14 +32,14 @@ include 'header.php';
       Your Email Address <a class='required'>*</a>
     </label>
     <div>
-      <input id='Field2' name='email' type='email' value='' maxlength='255' tabindex='2'> 
+      <input id='Field2' name='email' type='email' value='' maxlength='255'> 
    </div>
   </div>
    
   <div>
     <label class='desc' id='title3' for='Field3'>Subject</label>
     <div>
-      <input id='Field3' name='subject' type='text' class='field text fn' value='' size='8' tabindex='3'>
+      <input id='Field3' name='subject' type='text' class='field text fn' value='' size='8'>
     </div>
   </div>
     
@@ -49,7 +49,7 @@ include 'header.php';
     </label>
   
     <div>
-      <textarea id='Field4' name='comment' rows='10' cols='50' tabindex='4'></textarea>
+      <textarea id='Field4' name='comment' rows='10' cols='50'></textarea>
     </div>
   </div>
   <p class='required'>Please note fields highlighted with an * are required</p>
