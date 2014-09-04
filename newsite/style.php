@@ -127,16 +127,17 @@ h2.client
   padding: 0;
   list-style-type: none;
   overflow: hidden;
+  background-color: black;
   /* Layout */
 }
 
-.menu-item {
+#menu li {
   display: block;
   float: left;
   width: 25%; /* 100/number of items */
 }
 
-.menu-link {
+#menu a {
   display: block;
   background:url(img/sprite.gif);
   width: 100%;
@@ -146,17 +147,16 @@ h2.client
   text-align: center; /* centres horizontally */
   color: white;
   box-shadow: inset white 0px 0px 2px;
-  font-size: 1.2em;
 }
 
 /* hover state */
-.menu-link:hover
+#menu a:hover
 {
   background-position: 0 -50px;
 }
 
 /* the current page, and when clicked */
-.menu-link:active, .menu-link.is-active {
+#menu a:active, #menu a.is-active {
   background-position: 0 -100px;
 }
 img.logo
