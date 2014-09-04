@@ -1,18 +1,18 @@
-<html lang="en">
+<html lang='en'>
 <head>
 <script>
-document.cookie = "device_dimensions=" + screen.width + "x" + screen.height;
+document.cookie = 'device_dimensions=' + screen.width + 'x' + screen.height;
 </script>
-    <meta content="text/html; charset=utf-8"
-          http-equiv="Content-Type">
+    <meta content='text/html; charset=utf-8'
+          http-equiv='Content-Type'>
         
-<link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic' rel='stylesheet' type='text/css'>
 
 <?php
     print "<link href=\"style.php?page=$page\" rel=\"stylesheet\" type=\"text/css\">\n";
 ?>
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
-<script src="modernizr.custom.22910.js"></script>
+<script src='modernizr.custom.22910.js'></script>
 <?php
 if ($page == 'home') {
 print "<link rel='stylesheet'\nhref='flexslider.css'\ntype='text/css'>\n";
@@ -55,12 +55,12 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 ?>
     
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="medium.php" media="screen and (max-width: 1024px)" />
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 568px)" />
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <link rel='stylesheet' type='text/css' href='medium.php' media='screen and (max-width: 1024px)' />
+    <link rel='stylesheet' type='text/css' href='mobile.css' media='screen and (max-width: 568px)' />
 </head>
 <body>
-<div class="wrapper">
+<div class='wrapper'>
 <header>
     <h1>
     <?php if($page == 'home'){
@@ -95,8 +95,8 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 </h1>
 </header>
         <div>
-   <ul id="menu">
-  <li class="menu-item">
+   <ul id='menu'>
+  <li class='menu-item'>
     <a 
 <?php
 if ($page == home) {
@@ -107,7 +107,7 @@ print "href='index.php' class='menu-link'";
 }
 ?>>Home</a>
   </li>
-  <li class="menu-item">
+  <li class='menu-item'>
     <a 
 <?php
 if ($page == testimonials) {
@@ -118,7 +118,7 @@ print "href='testimonials.php' class='menu-link'";
 }
 ?>>Testimonials</a>
   </li>
-  <li class="menu-item">
+  <li class='menu-item'>
     <a
 <?php
 if ($page == ourwork) {
@@ -130,7 +130,7 @@ print "href='ourwork.php' class='menu-link'";
 ?>
       >Our Work</a>
   </li>
-  <li class="menu-item">
+  <li class='menu-item'>
     <a
 <?php
 if ($page == contactus) {
