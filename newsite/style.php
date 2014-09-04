@@ -255,6 +255,6 @@ img.phoneimg
 }
 .required
 {
-    color: red;
+    color: #0606c9;
     font-size: 60%;
 }
