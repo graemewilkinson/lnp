@@ -127,7 +127,6 @@ h2.client
   padding: 0;
   list-style-type: none;
   overflow: hidden;
-  background-color: black;
   /* Layout */
 }
 
@@ -147,6 +146,7 @@ h2.client
   text-align: center; /* centres horizontally */
   color: white;
   box-shadow: inset white 0px 0px 2px;
+  background-color: black;
 }
 
 /* hover state */
