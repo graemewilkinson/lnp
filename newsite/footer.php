@@ -1,6 +1,6 @@
 <footer>
     <ul class='social'>
-        <li><a href='https://www.facebook.com/pages/London-News-Pictures/'><img src='img/fb.svg' alt='Facebook logo' /></a></li>
+        <li><a href='https://www.facebook.com/pages/London-News-Pictures/122147711173678?fref=ts'><img src='img/fb.svg' alt='Facebook logo' /></a></li>
         <li><a href='https://twitter.com/LondonNPictures'><img src='img/twit.svg' alt='Twitter logo' /></a></li>
         <li><a href='mailto:graeme.wilkinson@monkey.com'><img src='img/at.svg' alt='graeme.wilkinson@monkey.com' /></a></li>
         <?php
