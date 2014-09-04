@@ -136,6 +136,7 @@ h2.client
   display: block;
   float: left;
   width: 25%; /* 100/number of items */
+  
 }
 
 .menu-link {
@@ -148,6 +149,7 @@ h2.client
   text-align: center; /* centres horizontally */
   color: white;
   box-shadow: inset white 0px 0px 2px;
+  font-size: 1.2em;
 }
 
 /* hover state */
