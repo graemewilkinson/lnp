@@ -118,7 +118,7 @@ print "href='testimonials.php'";
 }
 ?>>Testimonials</a>
   </li>
-  <li class=>
+  <li>
     <a
 <?php
 if ($page == ourwork) {
