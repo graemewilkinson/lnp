@@ -3,13 +3,13 @@ body
   background-color: #fff;
   margin: 0;
 }
-.menu-item
+#menu li
 {
   display: block;
   float: left;
   width: 100%; /* 100/number of items */
 }
-.menu-link {
+#menu a {
   background:url(img/spritemobile.gif);
 }
 p.tagline
