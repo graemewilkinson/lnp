@@ -96,48 +96,48 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 </header>
         <div>
    <ul id='menu'>
-  <li class='menu-item'>
+  <li>
     <a 
 <?php
 if ($page == home) {
-print "class='menu-link is-active'";
+print "class='is-active'";
 }
 else {
-print "href='index.php' class='menu-link'";
+print "href='index.php'";
 }
 ?>>Home</a>
   </li>
-  <li class='menu-item'>
+  <li>
     <a 
 <?php
 if ($page == testimonials) {
-print "class='menu-link is-active'";
+print "class='is-active'";
 }
 else {
-print "href='testimonials.php' class='menu-link'";
+print "href='testimonials.php'";
 }
 ?>>Testimonials</a>
   </li>
-  <li class='menu-item'>
+  <li class=>
     <a
 <?php
 if ($page == ourwork) {
-print "class='menu-link is-active'";
+print "class='is-active'";
 }
 else {
-print "href='ourwork.php' class='menu-link'";
+print "href='ourwork.php'";
 }
 ?>
-      >Our Work</a>
+>Our Work</a>
   </li>
-  <li class='menu-item'>
+  <li>
     <a
 <?php
 if ($page == contactus) {
-print "class='menu-link is-active'";
+print "class='is-active'";
 }
 else {
-print "href='contact.php' class='menu-link'";
+print "href='contact.php'";
 }
 ?>
 >Contact Us</a>
