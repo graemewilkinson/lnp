@@ -3,9 +3,9 @@
 $page = "home";
 include 'header.php';
 ?>
-<h2 class="introtitle">London News Pictures: Providing photography for your public relations events</h2>
- <div class="flexslider">
-  <ul class="slides">
+<h2 class='introtitle'>London News Pictures: Providing photography for your public relations events</h2>
+ <div class='flexslider'>
+  <ul class='slides'>
 <?php
 include 'login.php';
 
@@ -26,10 +26,10 @@ while ($row = mysql_fetch_row($result)) {
 ?>
   </ul>
 </div>
-<p class="tagline">
+<p class='tagline'>
         <em>We specialise in photography for corporate events for both small businesses and large blue chip companies. Run by two directors, Stephen Juliet and Robert Geoffries, the team organise the resources needed to meet all of your photography needs. Please contact the directors who will be happy to arrange for our experienced and friendly photographers to cover your event.</em>
       </p>
-            <div class="testblock">
+            <div class='testblock'>
 <?php
 include 'login.php';
 
