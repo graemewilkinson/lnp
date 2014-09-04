@@ -127,16 +127,13 @@ h2.client
   padding: 0;
   list-style-type: none;
   overflow: hidden;
-  
   /* Layout */
-  
 }
 
 .menu-item {
   display: block;
   float: left;
   width: 25%; /* 100/number of items */
-  
 }
 
 .menu-link {
