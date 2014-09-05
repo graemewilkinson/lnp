@@ -95,7 +95,7 @@ blockquote
 	font-style:italic;
 	margin: 1em;
 }
-div.testimonial
+div.testimonial,div.testimonialmain
 {
 	margin: 1%;
 	width: 30.333%;
