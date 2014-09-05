@@ -13,6 +13,7 @@ include 'login.php';
 $sql = 'SELECT sliderlink, des FROM slider ORDER BY pos';
 
 // run the query
+
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 
 while ($row = mysql_fetch_row($result)) {
