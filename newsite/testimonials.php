@@ -3,7 +3,7 @@
 $page = "testimonials";
 include 'header.php';
 ?>
-<p class='tagline'>Here we have collated all the testimonials from previous clients we have worked with. These are clients who have given us a testimonial after our work is complete and permission to publish the work we completed for them. We hope this gives you a good overview of the kind of service we offer. You can click read more to see the brief and the rest of the images relating to that client.</p>
+<p class='tagline'>Here we have collated all the testimonials from previous clients we have worked with. These are clients who have given us a testimonial after our work is complete and permission to publish the work we completed for them. We hope this gives you a good overview of the kind of service we offer. You can on the arrow icon to see the brief and the rest of the images relating to that client.</p>
 
 <div class='testblock'>    
 <?php
