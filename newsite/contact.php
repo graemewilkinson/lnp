@@ -2,6 +2,7 @@
 <?php
 $id = $_GET['id'];
 $page = "contactus";
+$pagetitle = "Contact Us";
 include 'header.php';
 ?>
 <div class='contactpage'>

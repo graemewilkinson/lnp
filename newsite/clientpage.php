@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 $page = "clientpage";
+//page title not required for this page//
 include 'header.php';
 if ($_GET["from"] == 'testi'){
 print "<p class='breadcrumb'><a href='index.php'>Home</a>/<a href='testimonials.php'>Testimonials</a>/Client Page</p>";

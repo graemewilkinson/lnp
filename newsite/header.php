@@ -24,10 +24,7 @@ print "<script src='jquery.mosaicflow.min.js'></script>\n";
 print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>\n";
 }
     print "<title>";
-    if ($page == 'home'){
-        print "London News Pictures | Public Relations Photography\n";
-    }
-    elseif ($page == 'clientpage'){
+    if ($page == 'clientpage'){
     include 'login.php';
 
 $link = mysql_connect($hostname,$username,$password);
@@ -42,14 +39,8 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
     list ($companyname) = $row;
         print "$companyname | Our Work | London News Pictures | Public Relations Photography\n";
     } 
-        elseif ($page == 'ourwork'){
-        print "Our Work | London News Pictures | Public Relations Photography\n";
-    }
-        elseif ($page == 'testimonials'){
-        print "Testimonials | London News Pictures | Public Relations Photography\n";
-    }
-        elseif ($page == 'contactus'){
-        print "Contact Us | London News Pictures | Public Relations Photography\n";
+        else {
+        print "$pagetitle | London News Pictures | Public Relations Photography\n";
     }
     print "</title>";
 ?>

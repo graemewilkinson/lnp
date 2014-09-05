@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 $page = "ourwork";
+$pagetitle = "Our Work";
 include 'header.php';
 ?>
 <p class='tagline'>Below is a selection of images which link to galleries of our work for past clients. You can read the testimonials, the brief and see a selection of photography we have completed for that client by clicking on the relevant image.</p>

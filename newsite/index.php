@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 $page = "home";
+$pagetitle = "Home";
 include 'header.php';
 ?>
 <h2 class='introtitle'>London News Pictures: Providing photography for your public relations events</h2>
