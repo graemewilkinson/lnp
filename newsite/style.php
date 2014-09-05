@@ -265,10 +265,10 @@ img.phoneimg
 }
 h3
 {
-    font-size: 1.7em;
+    font-size: 1.3em;
 }
-div.testimonial h2
+div.testimonialmain h2
 {
-	font-size: 1.7em;
+	font-size: 1.3em;
 }
 }
