@@ -26,7 +26,7 @@ while ($row = mysql_fetch_row($result)) {
     else {
     print "<div class='$ref'></div>\n";
 }
-    print "<h3>$companyname</h3>\n";
+    print "<h2>$companyname</h2>\n";
     print "<blockquote>$testimonialcontent</blockquote>\n";
     print "<p>$name<a href='clientpage.php?id=$id&amp;from=testi'><img class='more' src='img/arrow.svg' alt='read more about our work for $companyname'></a></p>\n";
     print "</div>\n\n";
