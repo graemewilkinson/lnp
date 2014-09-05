@@ -8,11 +8,6 @@ include 'header.php';
  <div class='flexslider'>
   <ul class='slides'>
 <?php
-include 'login.php';
-
-$link = mysql_connect($hostname,$username,$password);
-mysql_select_db($database) or die("Unable to select database");
-
 $sql = 'SELECT sliderlink, des FROM slider ORDER BY pos';
 
 // run the query

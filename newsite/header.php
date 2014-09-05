@@ -24,12 +24,12 @@ print "<script src='jquery.mosaicflow.min.js'></script>\n";
 print "<link href='mosiacstyle.css' rel='stylesheet' type='text/css'>\n";
 }
     print "<title>";
-    if ($page == 'clientpage'){
-    include 'login.php';
 
+include 'login.php';
+    
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
-
+    if ($page == 'clientpage'){
 $sql ='SELECT companyname FROM testimonials WHERE id = '. $_GET['id'];
 
 // run the query

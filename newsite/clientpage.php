@@ -9,11 +9,6 @@ print "<p class='breadcrumb'><a href='index.php'>Home</a>/<a href='testimonials.
 else {
  print "<p class='breadcrumb'><a href='index.php'>Home</a>/<a href='ourwork.php'>Our Work</a>/Client Page</p>";
 }
-include 'login.php';
-
-$link = mysql_connect($hostname,$username,$password);
-mysql_select_db($database) or die("Unable to select database");
-
 $sql ='SELECT id, companyname, testimonialcontent, name, brief FROM testimonials WHERE id = '. $_GET['id'];
 $images ='SELECT imagelink, imagedes FROM img WHERE logo = FALSE AND id = '. $_GET['id'];
 
