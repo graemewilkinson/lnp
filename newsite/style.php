@@ -107,6 +107,11 @@ div.testblock
     float: left;
     margin: 0 5%;
 }
+img.more
+{
+    vertical-align: -45%;
+    padding-left: 5%;
+}
 h2.client
 {
   margin: 2%;  
