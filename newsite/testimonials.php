@@ -18,7 +18,7 @@ $sql = 'SELECT testimonials.id, testimonials.companyname, testimonials.testimoni
 $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 
 while ($row = mysql_fetch_row($result)) {
-    print "<div class='testimonial'>\n";
+    print "<div class='testimonialmain'>\n";
     list ($id, $companyname, $testimonialcontent, $name, $imagelink, $imagedes, $ref, $logo) = $row;
     if ($logo == TRUE) {
     print "\n<div class='$ref'>\n<img src='img/$imagelink' alt='$imagedes' />\n</div>\n\n";
