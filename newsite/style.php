@@ -263,3 +263,12 @@ img.phoneimg
     color: #0606c9;
     font-size: 60%;
 }
+h3
+{
+    font-size: 1.7em;
+}
+div.testimonial h2
+{
+	font-size: 1.7em;
+}
+}
