@@ -35,10 +35,9 @@ div.clientpagebtm
 {
   opacity: 1;
 }
-img.logo
+header h1
 {
-    display: block;
-    margin: 4% auto;
-    width: 50%;
+    width: 100%;
 }
+
 

@@ -40,7 +40,15 @@ div.contactpage
     float: left;
     margin: 3%
 }
-img.logo
+header img
 {
-	width: 40%;
+float: none;
+width: 160px;
+display: block;
+margin: 2% auto 0 auto;
+}
+header h1
+{
+width: 100%;
+margin: 2% 0; 
 }

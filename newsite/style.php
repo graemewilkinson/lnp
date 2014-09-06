@@ -61,9 +61,12 @@ div.wrapper
     margin: auto;
     overflow: auto;
 }
-h1
+header h1
 {
-    margin: 0;
+    float: left;
+    width: 550px;
+    text-align: center;
+    margin: 4% 0; 
 }
 h2.introtitle
 {
@@ -151,7 +154,7 @@ h2.client
   text-align: center; /* centres horizontally */
   color: white;
   box-shadow: inset white 0px 0px 2px;
-  background-color: black;
+  background-color: #962134;
 }
 
 /* hover state */
@@ -164,11 +167,12 @@ h2.client
 #menu a:active, #menu a.is-active {
   background-position: 0 -100px;
 }
-img.logo
+h
 {
 	width: 25%;
 	max-width: 180px;
 	margin: 2%;
+	float: left;
 }
 .mosaicflow__column
 {
@@ -271,4 +275,9 @@ div.testimonialmain h2
 {
 	font-size: 1.3em;
 }
+header img
+{
+    margin: 2% ;
+    width: 200px;
+    float: left;
 }

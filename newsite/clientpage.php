@@ -18,7 +18,7 @@ $imageresult = mysql_query($images,$link) or die("Unable to select: ".mysql_erro
 
  $row = mysql_fetch_row($result);
     list ($id, $companyname, $testimonialcontent, $name, $brief) = $row;
-    print "<h2 class='client'>$companyname</h2>\n";
+    print "<h2 class='client'>Our work for $companyname</h2>\n";
     print "<div class='clearfix mosaicflow'>\n";
 while ($imagerow = mysql_fetch_row($imageresult)) {
     list ($imagelink, $imagedes) = $imagerow;

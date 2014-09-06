@@ -5,7 +5,7 @@ document.cookie = 'device_dimensions=' + screen.width + 'x' + screen.height;
 </script>
     <meta content='text/html; charset=utf-8'
           http-equiv='Content-Type'>
-        
+<link href='http://necolas.github.io/normalize.css/3.0.1/normalize.css' rel='stylesheet' type='text/css'>        
 <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic' rel='stylesheet' type='text/css'>
 
 <?php
@@ -53,37 +53,22 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
 <body>
 <div class='wrapper'>
 <header>
-    <h1>
-    <?php if($page == 'home'){
+    <?php if ($page == 'home'){
+    print "<img alt='London News Pictures logo' src='img/lnplogo.svg' />";
     }
     else {
-        print "<a href='index.php'>";
+        print "<a href='index.php'><img alt='link back to home page' src='img/lnplogo.svg' /></a>";
     }
-    ?><img alt='<?php
-    if ($page == 'home'){
-        print "Home Page";
-         }
-        elseif ($page == 'ourwork'){
-        print "Our Work";
-        }
-        elseif ($page == 'testimonials'){
-        print "Testimonials";
-        }
-        elseif ($page == 'contactus'){
-        print "Contact Us";
-        }
-        elseif ($page == 'clientpage'){
-        print "Our work for $companyname";
-        }
-        ?>'
-              class='logo'
-              src='img/lnplogo.svg'>
-   <?php if ($page == 'home'){
+    if ($page == 'clientpage'){
+    print "<h1>$companyname</h1>\n";
+    }
+    elseif ($page == 'home'){
+    print "<h1 class='alth1'>London News Pictures</h1>\n";
     }
     else {
-    print "</a>";
-    } ?>
-</h1>
+    print "<h1>$pagetitle</h1>\n";
+    }       
+?>
 </header>
         <div>
    <ul id='menu'>
