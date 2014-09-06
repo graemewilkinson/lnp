@@ -63,7 +63,7 @@ $result = mysql_query($sql,$link) or die("Unable to select: ".mysql_error());
     print "<h1>$companyname</h1>\n";
     }
     elseif ($page == 'home'){
-    print "<h1 class='alth1'>London News Pictures</h1>\n";
+    print "<h1>London News Pictures</h1>\n";
     }
     else {
     print "<h1>$pagetitle</h1>\n";
