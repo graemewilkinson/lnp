@@ -3,7 +3,7 @@
 $id = $_GET['id'];
 $page = "contactus";
 $pagetitle = "Contact Us";
-include 'header.php';
+include 'include/header.php';
 ?>
 <div class='contactpage'>
 <?php if($id == 'submitted') : ?>
@@ -73,7 +73,7 @@ include 'header.php';
 </div>
 
 <?php
-include 'footer.php';
+include 'include/footer.php';
 ?>
 </div>
 </body>

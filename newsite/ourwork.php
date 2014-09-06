@@ -2,11 +2,11 @@
 <?php
 $page = "ourwork";
 $pagetitle = "Our Work";
-include 'header.php';
+include 'include/header.php';
 ?>
 <p class='tagline'>Below is a selection of images which link to galleries of our work for past clients. You can read the testimonials, the brief and see a selection of photography we have completed for that client by clicking on the relevant image.</p>
 <?php
-include 'login.php';
+include 'include/login.php';
 
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
@@ -24,7 +24,7 @@ while ($row = mysql_fetch_row($result)) {
     print "</div>\n";
 }
 print "</div>\n";
-include 'footer.php';
+include 'include/footer.php';
 ?>
 </div>
 

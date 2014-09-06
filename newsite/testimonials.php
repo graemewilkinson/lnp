@@ -2,7 +2,7 @@
 <?php
 $page = "testimonials";
 $pagetitle = "Testimonials";
-include 'header.php';
+include 'include/header.php';
 ?>
 <p class='tagline'>Here we have collated all the testimonials from previous clients we have worked with. These are clients who have given us a testimonial after our work is complete and permission to publish the work we completed for them. We hope this gives you a good overview of the kind of service we offer. You can on the arrow icon to see the brief and the rest of the images relating to that client.</p>
 
@@ -30,7 +30,7 @@ while ($row = mysql_fetch_row($result)) {
 ?>
             </div>
 <?php
-include 'footer.php';
+include 'include/footer.php';
 ?>
     </div>
 </body> 

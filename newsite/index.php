@@ -2,7 +2,7 @@
 <?php
 $page = "home";
 $pagetitle = "Home";
-include 'header.php';
+include 'include/header.php';
 ?>
 <h2 class='introtitle'>London News Pictures: Providing photography for your public relations events</h2>
  <div class='flexslider'>
@@ -49,7 +49,7 @@ while ($row = mysql_fetch_row($result)) {
 ?>
             </div>
 <?php
-include 'footer.php';
+include 'include/footer.php';
 ?>
     </div>
 </body>

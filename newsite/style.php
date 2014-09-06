@@ -2,7 +2,7 @@
     $page = $_GET['page'];
     error_reporting(E_ALL); ini_set('display_errors', 1);
     
-include 'login.php';
+include '../include/login.php';
 
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
@@ -21,7 +21,7 @@ while ($row = mysql_fetch_row($result)) {
     print "border-radius: 25px;\n";
     print "-webkit-border-radius: 25px;\n";
     print "-moz-border-radius: 25px;\n";
-    print "background: url('img/$imagelink') no-repeat;\n";
+    print "background: url('../img/$imagelink') no-repeat;\n";
     print "background-size: 50px 50px;\n";
     print "margin: auto;\n";
     if ($page == 'testimonials'){
@@ -146,7 +146,7 @@ h2.client
 
 #menu a {
   display: block;
-  background:url(img/sprite.gif);
+  background:url(../img/sprite.gif);
   width: 100%;
   height: 50px;
   line-height: 50px; /* centres text vertically */

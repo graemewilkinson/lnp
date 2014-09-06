@@ -10,7 +10,7 @@ body
   width: 100%; /* 100/number of items */
 }
 #menu a {
-  background:url(img/spritemobile.gif);
+  background:url(../img/spritemobile.gif);
 }
 p.tagline
 {

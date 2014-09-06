@@ -1,6 +1,6 @@
 <?php header("Content-type: text/css; charset=utf-8");
 
-include 'login.php';
+include '../include/login.php';
 
 $link = mysql_connect($hostname,$username,$password);
 mysql_select_db($database) or die("Unable to select database");
@@ -24,7 +24,7 @@ while ($row = mysql_fetch_row($result)) {
   float: left;
   width: 50%; /* 100/number of items */
 }
-div.testimonial
+div.testimonial, div.testimonialmain
 {
 	float:left;
 	margin: 0% 1% 0% 1%;

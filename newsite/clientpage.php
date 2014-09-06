@@ -2,7 +2,7 @@
 <?php
 $page = "clientpage";
 //page title not required for this page//
-include 'header.php';
+include 'include/header.php';
 if ($_GET["from"] == 'testi'){
 print "<p class='breadcrumb'><a href='index.php'>Home</a>/<a href='testimonials.php'>Testimonials</a>/Client Page</p>";
 }
@@ -36,7 +36,7 @@ while ($imagerow = mysql_fetch_row($imageresult)) {
     print "<blockquote>$testimonialcontent</blockquote>\n";
     print "<p>$name</p>\n";
     print "</div>\n";
-    include 'footer.php';
+    include 'include/footer.php';
 ?>
 </div>
 </body>
