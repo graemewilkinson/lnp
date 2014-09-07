@@ -1,3 +1,3 @@
 _site
-newsite/login.php
+newsite/include/login.php
 phpsample/connect-db.php
