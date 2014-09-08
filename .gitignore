@@ -1,3 +1,5 @@
 _site
 newsite/include/login.php
 phpsample/connect-db.php
+phpsample/.htaccess
+phpsample/.htpasswd
