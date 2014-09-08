@@ -1,4 +1,0 @@
-AuthType Basic  
-AuthName "restricted admin area for LNPPR website"  
-AuthUserFile /home/gwilki01/htdocs/phpsample/.htpasswd 
-require valid-user
